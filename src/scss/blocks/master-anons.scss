@@ -1,0 +1,44 @@
+.master-anons {
+  height: 100%;
+}
+
+.master-anons__body {
+  position: relative;
+  min-height: 485px;
+}
+
+.master-anons__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 55px 35px 22px 35px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(0,0,0,.4),transparent,rgba(0,0,0,.5));
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.master-anons__date {
+  color: #fff;
+  font-family: $font-decor;
+  font-size: 24px;
+  font-style: italic;
+  line-height: 1;
+}
+
+.master-anons__title {
+  margin-bottom: 27px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.master-anons__sign-up {
+  min-width: 145px;
+  color: #fff;
+  border: 1px solid #c2c2c2;
+}

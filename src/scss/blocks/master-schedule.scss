@@ -1,0 +1,77 @@
+.master-schedule {
+  height: 100%;
+}
+
+.master-schedule__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.master-schedule__list {
+  @include reset-list;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.master-schedule__item {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 34px;
+    right: 34px;
+    height: 1px;
+    background-color: #e1e1e1;
+  }
+  &:last-child {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.master-schedule__link {
+  @include reset-link;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 38px;
+  &:hover {
+    .master-schedule__date {
+      color: $theme-color-1;
+    }
+    .master-schedule__title {
+      color: $theme-color-1;
+    }
+  }
+}
+
+.master-schedule__date {
+  display: block;
+  margin-bottom: 18px;
+  color: #343434;
+  font-family: $font-decor;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1;
+}
+
+.master-schedule__title {
+  display: block;
+  color: #1b1b1b;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.master-schedule__view-all {
+  min-width: 184px;
+  margin-left: 38px;
+  color: #343434;
+  border: 1px solid #c2c2c2;
+}

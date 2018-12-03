@@ -1,0 +1,38 @@
+.button-link {
+  @include reset-link;
+  position: relative;
+  padding: 19px;
+  background-color: $theme-color-1;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+  overflow: hidden;
+  &:hover {
+    color: #fff;
+    .button-link__bg {
+      transform: translateY(0);
+      transition: transform 0.25s;
+    }
+  }
+}
+
+.button-link__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: $theme-color-2;
+  transform: translateY(100%);
+  transition: transform 0.25s;
+}
+
+.button-link__text {
+  position: relative;
+  z-index: 2;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}

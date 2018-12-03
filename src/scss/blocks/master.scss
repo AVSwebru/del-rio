@@ -1,0 +1,25 @@
+.master {
+  padding: 63px 0 88px;
+  background-color: #e6e3e8;
+}
+
+.master__title {
+  margin-bottom: 45px;
+  color: #202020;
+  font-family: $font-decor;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.master__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.master__title {
+  margin-bottom: 20px;
+  color: #686868;
+  font-size: 15px;
+  text-transform: uppercase;
+}

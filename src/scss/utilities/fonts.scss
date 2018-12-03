@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher/Philosopher-Bold.woff"),
+    local("Philosopher Bold"), local("Philosopher-Bold");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher/Philosopher-BoldItalic.woff"),
+    local("Philosopher BoldItalic"), local("Philosopher-BoldItalic");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher/Philosopher-Italic.woff"),
+    local("Philosopher Italic"), local("Philosopher-Italic");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/SegoeUI/SegoeUI-SemiBold.woff"),
+    local("SegoeUI SemiBold"), local("SegoeUI-SemiBold");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/SegoeUI/SegoeUI.woff"),
+    local("SegoeUI"), local("SegoeUI");
+  font-weight: normal;
+  font-style: normal;
+}

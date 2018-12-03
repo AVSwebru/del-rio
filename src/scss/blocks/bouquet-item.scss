@@ -1,0 +1,36 @@
+.bouquet-item {
+  background-color: #fff;
+}
+
+.bouquet-item__image {
+  height: 206px;
+  margin-bottom: 20px;
+}
+
+.bouquet-item__content {
+  padding: 22px 16px 14px;
+}
+
+.bouquet-item__title {
+  @include reset-link;
+  margin-bottom: 20px;
+  color: #343434;
+  font-size: 14px;
+  &:hover {
+    color: $theme-color-1;
+  }
+}
+
+.bouquet-item__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bouquet-item__price {
+  color: #343434;
+  font-family: $font-decor;
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+}

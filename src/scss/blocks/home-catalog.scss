@@ -1,0 +1,16 @@
+.home-catalog {
+  padding: 78px 0 69px;
+  background-color: #f6f5f5;
+}
+
+.home-catalog__wrapper {
+  display: grid;
+  grid-template-columns: 195px auto;
+  grid-gap: 83px;
+}
+
+.home-catalog__bouquets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 277px);
+  grid-gap: 15px;
+}

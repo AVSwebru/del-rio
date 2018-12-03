@@ -1,0 +1,90 @@
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+}
+
+.main-header__top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__top-left {
+  display: flex;
+  align-items: center;
+  margin: 23px 0;
+}
+
+.main-header__logo {
+  margin-right: 17px;
+}
+
+.main-header__services {
+  @include reset-list;
+  padding-left: 26px;
+}
+
+.main-header__services-item {
+  position: relative;
+  margin-bottom: 10px;
+  color: #cacdcf;
+  font-size: 15px;
+  line-height: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0.5em;
+    left: -26px;
+    width: 12px;
+    height: 1px;
+    background-color: #fff;
+  }
+}
+
+.main-header__instagramm-icon {
+  margin-right: 14px;
+}
+
+.main-header__instagramm {
+  margin: 23px 0;
+  font-size: 15px;
+}
+
+.main-header__tel-icon {
+  margin-right: 17px;
+}
+
+.main-header__tel {
+  margin: 23px 0;
+  font-size: 24px;
+}
+
+.main-header__tel-small-numbers {
+  position: relative;
+  top: -2px;
+  align-self: flex-end;
+  font-size: 15px;
+}
+
+.main-header__cart-icon {
+  margin-right: 15px;
+}
+
+.main-header__cart {
+  margin: 23px 0;
+  font-size: 15px;
+}
+
+.main-header__link {
+  @include reset-link;
+  display: flex;
+  align-items: center;
+  color: #cacdcf;
+  line-height: 1;
+  &:hover {
+    color: #fff;
+  }
+}
