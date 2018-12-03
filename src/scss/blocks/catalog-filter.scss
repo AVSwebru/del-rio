@@ -39,10 +39,20 @@
 .catalog-filter__price-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.catalog-filter__price-block {
+  width: 90px;
 }
 
 .catalog-filter__price-label {
   color: #343434;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1;
+}
+
+
+.catalog-filter__input {
+  height: 35px;
 }

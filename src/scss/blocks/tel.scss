@@ -1,0 +1,16 @@
+.tel {
+  @include reset-link;
+  font-size: 24px;
+  color: #cacdcf;
+  white-space: nowrap;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.tel__small-numbers {
+  position: relative;
+  top: -2px;
+  align-self: flex-end;
+  font-size: 15px;
+}

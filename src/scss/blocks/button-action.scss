@@ -1,0 +1,16 @@
+.button-action {
+  @include reset-btn;
+  padding: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: $theme-color-2;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  text-align: center;
+  &:hover {
+    background-color: darken($theme-color-2, 5%);
+    transition: background-color 0.25s;
+  }
+}

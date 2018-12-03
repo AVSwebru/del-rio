@@ -1,0 +1,14 @@
+.services {
+  padding: 85px 0 145px;
+  background: #e6e3e8 url('../../img/bg-services.jpg') 100% 50% no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-auto-rows: 337px;
+  grid-column-gap: 15px;
+
+}

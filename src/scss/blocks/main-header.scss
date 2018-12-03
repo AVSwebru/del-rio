@@ -46,6 +46,7 @@
 
 .main-header__instagramm-icon {
   margin-right: 14px;
+  fill: $theme-color-1;
 }
 
 .main-header__instagramm {
@@ -55,22 +56,16 @@
 
 .main-header__tel-icon {
   margin-right: 17px;
+  fill: $theme-color-1;
 }
 
 .main-header__tel {
   margin: 23px 0;
-  font-size: 24px;
-}
-
-.main-header__tel-small-numbers {
-  position: relative;
-  top: -2px;
-  align-self: flex-end;
-  font-size: 15px;
 }
 
 .main-header__cart-icon {
   margin-right: 15px;
+  fill: $theme-color-1;
 }
 
 .main-header__cart {

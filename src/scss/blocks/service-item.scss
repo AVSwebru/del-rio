@@ -1,0 +1,34 @@
+.service-item {
+  @include reset-link;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  &_interior {
+    background: #303644 url('../../img/bg-interior.jpg') 50% 50% no-repeat;
+    background-size: cover;
+  }
+  &_floristics {
+    background: #303644 url('../../img/bg-floristics.jpg') 50% 50% no-repeat;
+    background-size: cover;
+  }
+  &:hover {
+    .service-item__title {
+      background-color: transparentize($theme-color-2, 0.2);
+      transition: background-color 0.25s;
+    }
+  }
+}
+
+.service-item__title {
+  max-width: 220px;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: rgba(68, 67, 73, 0.9);
+  color: #ffffff;
+  font-family: $font-decor;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.25s;
+}

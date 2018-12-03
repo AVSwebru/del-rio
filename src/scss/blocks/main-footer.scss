@@ -1,0 +1,49 @@
+.main-footer {
+  padding: 50px 0 33px;
+  background: #444349 url('../../img/bg-random.jpg') 0 50% repeat-x;
+  background-size: auto;
+}
+
+.main-footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #555458;
+}
+
+.main-footer__footer-nav {
+  margin: 20px 0;
+}
+
+.main-footer__tel {
+  margin: 20px 0;
+  color: #fff;
+}
+
+.main-footer__tel-icon {
+  fill: #fff;
+}
+
+.main-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #39383e;
+  padding-top: 46px;
+}
+
+.main-footer__owner {
+  margin: 20px 0;
+  color: #cacdcf;
+}
+
+.main-footer__policy {
+  margin: 20px 0;
+  color: #cacdcf;
+  &:hover {
+    color: #cacdcf;
+  }
+}
+
+.main-footer__devs {
+  margin: 20px 0;
+}

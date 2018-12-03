@@ -1,10 +1,30 @@
 .bouquet-item {
   background-color: #fff;
+  transition: box-shadow 0.25s;
+  &:hover {
+    box-shadow: 5px 9px 28px rgba(208, 204, 215, 0.86);
+    transition: box-shadow 0.25s;
+  }
+}
+
+.bouquet-item__image-wrapper {
+  display: block;
+  height: 206px;
+  overflow: hidden;
+  &:hover {
+    .bouquet-item__image {
+      transform: scale(1.1);
+      transition: transform 0.5s;
+    }
+    + .bouquet-item__content .bouquet-item__title {
+      color: $theme-color-1;
+    }
+  }
+
 }
 
 .bouquet-item__image {
-  height: 206px;
-  margin-bottom: 20px;
+  transition: transform 0.5s;
 }
 
 .bouquet-item__content {
@@ -33,4 +53,10 @@
   font-size: 22px;
   font-weight: 700;
   font-style: italic;
+}
+
+.bouquet-item__price-rubl {
+  font-family: $font-rubl;
+  font-size: 20px;
+  font-weight: 700;
 }

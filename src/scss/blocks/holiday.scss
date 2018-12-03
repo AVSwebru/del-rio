@@ -1,0 +1,48 @@
+.holiday {
+  position: relative;
+  height: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  background: #091c25 url('../../img/bg-holiday.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.holiday__wrapper {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.holiday__date {
+  position: relative;
+  top: -20px;
+  width: 200px;
+  padding: 15px 10px;
+  color: #343434;
+  font-family: $font-decor;
+  font-style: italic;
+  background-color: #fff;
+  text-align: center;
+}
+
+.holiday__title {
+  margin: 0;
+  font-family: $font-decor;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}

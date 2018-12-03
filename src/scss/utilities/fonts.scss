@@ -1,4 +1,12 @@
 @font-face {
+  font-family: "ALSRubl";
+  src: url("../fonts/ALSRubl/ALSRubl.woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+@font-face {
   font-family: "Philosopher";
   src: url("../fonts/Philosopher/Philosopher-Bold.woff"),
     local("Philosopher Bold"), local("Philosopher-Bold");

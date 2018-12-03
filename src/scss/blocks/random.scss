@@ -1,0 +1,65 @@
+.random {
+  padding: 180px 0 60px;
+  background: #444349 url('../../img/bg-random.jpg') 0% 50% repeat-x;
+  background-size: auto;
+}
+
+.random__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.random__title {
+  margin-bottom: 13px;
+  color: #ffff;
+  font-family: $font-decor;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.random__text {
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.random__item {
+  position: absolute;
+}
+
+.random__item-1 {
+  top: -100px;
+  left: -50px;
+}
+
+.random__item-2 {
+  top: -100px;
+  left: -50px;
+}
+
+.random__item-3 {
+  top: -100px;
+  left: -50px;
+}
+
+.random__item-4 {
+  top: -100px;
+  left: -50px;
+}
+
+.random__item-5 {
+  top: -100px;
+  left: -50px;
+}
+
+.random__item-6 {
+  top: -100px;
+  left: -50px;
+}
+
+.random__item-7 {
+  top: -100px;
+  left: -50px;
+}

@@ -13,6 +13,11 @@ $global-medium-gutter: 15px;
 
 // 3. Your custom mixin overwrites.
 
+//form
+@mixin hook-form-focus() {
+  border-color: $theme-color-1;  
+}
+
 // //search
 // @mixin hook-search-input() {
 //   padding: 0 10px;

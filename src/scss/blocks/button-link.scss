@@ -1,7 +1,10 @@
 .button-link {
   @include reset-link;
   position: relative;
+  display: inline-block;
+  min-width: 170px;
   padding: 19px;
+  box-sizing: border-box;
   background-color: $theme-color-1;
   color: #fff;
   line-height: 1;
