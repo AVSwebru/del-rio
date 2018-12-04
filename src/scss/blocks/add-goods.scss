@@ -2,7 +2,7 @@
   position: relative;
   height: 100%;
   box-sizing: border-box;
-  padding: 37px 50px 17px;
+  padding: 32px 50px 17px;
   overflow: hidden;
   &::before {
     content: '';
@@ -39,6 +39,7 @@
   font-family: $font-decor;
   font-size: 20px;
   font-weight: 700;
+  line-height: 1.3;
   text-align: center;
 }
 
@@ -50,6 +51,18 @@
 
 .add-goods__image {
   margin-bottom: 15px;
+}
+
+.add-goods__slider-left-arrow {
+  position: absolute;
+  top: 26%;
+  left: 13px;
+}
+
+.add-goods__slider-right-arrow {
+  position: absolute;
+  top: 26%;
+  right: 13px;
 }
 
 .add-goods__arrow {

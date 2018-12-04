@@ -1,0 +1,50 @@
+.menu-btn {
+  @include reset-btn;
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  min-width: 40px;
+  height: 30px;
+  min-height: 40px;
+  padding: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  &.active {
+    .menu-btn__icon-menu {
+      transform: translateY(-100%);
+      transition: transform 0.25s;
+    }
+    .menu-btn__icon-close {
+      transform: translateY(0);
+      transition: transform 0.25s;
+    }
+  }
+  @media (max-width: $breakpoint-small) {
+    display: block;
+  }
+}
+
+.menu-btn__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.menu-btn__icon-menu {
+  transition: transform 0.25s;
+  background-color: $theme-color-1;
+}
+
+.menu-btn__icon-close {
+  transform: translateY(100%);
+  transition: transform 0.25s;
+  background-color: $theme-color-2;
+}

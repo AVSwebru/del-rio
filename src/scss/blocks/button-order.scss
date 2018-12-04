@@ -1,9 +1,10 @@
 .button-order {
   @include reset-btn;
   position: relative;
-  padding: 19px;
+  min-width: 110px;
+  box-sizing: border-box;
+  padding: 8px;
   color: #343434;
-  line-height: 1;
   text-align: center;
   overflow: hidden;
   border: 1px solid #dadada;
@@ -26,7 +27,7 @@
   z-index: 2;
   color: #343434;
   font-size: 12px;
-  font-weight: 600;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: color 0.25s;
 }

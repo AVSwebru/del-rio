@@ -28,14 +28,16 @@
 }
 
 .bouquet-item__content {
-  padding: 22px 16px 14px;
+  padding: 14px 7px 14px 23px;
 }
 
 .bouquet-item__title {
   @include reset-link;
+  display: inline-block;
   margin-bottom: 20px;
   color: #343434;
   font-size: 14px;
+  line-height: 1.3;
   &:hover {
     color: $theme-color-1;
   }

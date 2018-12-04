@@ -1,21 +1,24 @@
 .master-schedule {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
 .master-schedule__body {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   box-sizing: border-box;
-  padding: 20px 0;
+  padding: 22px 0;
   background-color: #fff;
 }
 
 .master-schedule__list {
   @include reset-list;
   width: 100%;
-  margin: 10px 0;
+  margin: 10px 0 21px;
 }
 
 .master-schedule__item {
@@ -33,6 +36,15 @@
     &::before {
       display: none;
     }
+  }
+  @media (max-width: $breakpoint-medium) {
+    display: inline-block;
+    width: 50%;
+    float: left;
+  }
+  @media (max-width: $breakpoint-small) {
+    width: 100%;
+    float: none;
   }
 }
 
@@ -54,7 +66,7 @@
 
 .master-schedule__date {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   color: #343434;
   font-family: $font-decor;
   font-size: 22px;
@@ -67,6 +79,7 @@
   color: #1b1b1b;
   font-size: 15px;
   font-weight: 400;
+  line-height: 1.2;
 }
 
 .master-schedule__view-all {

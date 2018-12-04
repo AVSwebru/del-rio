@@ -9,6 +9,8 @@
 
 .about__content {
   position: relative;
+  height: 100%;
+  padding-top: 78px;
   text-align: center;
 }
 
@@ -19,7 +21,7 @@
 
 .about__title {
   position: relative;
-  margin-bottom: 75px;
+  margin-bottom: 59px;
   color: #4d4d4d;
   font-family: $font-decor;
   font-size: 36px;
@@ -27,7 +29,7 @@
   &::before {
     content: '';
     position: absolute;
-    bottom: -35px;
+    bottom: -24px;
     left: 50%;
     width: 68px;
     height: 1px;
@@ -43,8 +45,8 @@
 
 .about__decor-1 {
   position: absolute;
-  top: -90px;
-  left: -90px;
+  top: -17%;
+  left: -13%;
   z-index: 1;
   width: 150px;
   height: 245px;
@@ -52,9 +54,10 @@
 
 .about__decor-2 {
   position: absolute;
-  bottom: -290px;
-  right: -90px;
+  bottom: -4%;
+  right: -15%;
   z-index: 1;
   width: 175px;
   height: 239px;
+  transform: scaleX(-1);
 }

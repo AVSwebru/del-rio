@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 273px);
   grid-gap: 15px;
+  justify-content: center;
 }
 
 .home-catalog__more-wrapper {

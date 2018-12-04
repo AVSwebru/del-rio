@@ -1,5 +1,7 @@
 .button-action {
   @include reset-btn;
+  min-width: 200px;
+  box-sizing: border-box;
   padding: 10px;
   color: #fff;
   font-size: 12px;

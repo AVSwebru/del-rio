@@ -1,65 +1,99 @@
 .random {
-  padding: 180px 0 60px;
+  padding: 46px 0;
   background: #444349 url('../../img/bg-random.jpg') 0% 50% repeat-x;
   background-size: auto;
 }
 
 .random__wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.random__pic-container {
+  position: relative;
+  width: 514px;
+  height: 100px;
+  margin-bottom: 20px;
+  @media (max-width: $breakpoint-small) {
+    display: none;
+  }
+}
+
 .random__title {
-  margin-bottom: 13px;
-  color: #ffff;
+  margin: 0 0 3px 0;
+  color: #fff;
   font-family: $font-decor;
   font-size: 36px;
   font-weight: 700;
+  text-align: center;
 }
 
 .random__text {
   margin-bottom: 25px;
   color: #fff;
+  text-align: center;
 }
 
 .random__item {
   position: absolute;
 }
 
-.random__item-1 {
-  top: -100px;
-  left: -50px;
+.random__pic-1-wrapper {
+  position: absolute;
+  top: 29px;
+  left: 25px;
 }
 
-.random__item-2 {
-  top: -100px;
-  left: -50px;
+.random__pic-1 {
+  transform: rotate(-45deg);
 }
 
-.random__item-3 {
-  top: -100px;
-  left: -50px;
+.random__pic-2-wrapper {
+  position: absolute;
+  top: -4px;
+  left: 105px;
 }
 
-.random__item-4 {
-  top: -100px;
-  left: -50px;
+.random__pic-3-wrapper {
+  position: absolute;
+  top: 50px;
+  left: 167px;
 }
 
-.random__item-5 {
-  top: -100px;
-  left: -50px;
+.random__pic-3 {
+  transform: rotate(-15deg);
 }
 
-.random__item-6 {
-  top: -100px;
-  left: -50px;
+.random__pic-4-wrapper {
+  position: absolute;
+  top: 13px;
+  left: 211px;
 }
 
-.random__item-7 {
-  top: -100px;
-  left: -50px;
+.random__pic-5-wrapper {
+  position: absolute;
+  top: 31px;
+  left: 306px;
+}
+
+.random__pic-5 {
+  transform: rotate(125deg);
+}
+
+.random__pic-6-wrapper {
+  position: absolute;
+  top: 35px;
+  left: 417px;
+}
+
+.random__pic-7-wrapper {
+  position: absolute;
+  top: 3px;
+  left: 474px;
+}
+
+.random__pic-7 {
+  transform: rotate(25deg);
 }
