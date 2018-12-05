@@ -48,6 +48,9 @@
   height: 77px;
   margin-right: 20px;
   @media (max-width: $breakpoint-small) {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
     margin-bottom: 15px;
   }
 }

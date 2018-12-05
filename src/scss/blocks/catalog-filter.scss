@@ -1,12 +1,35 @@
+.catalog-filter {
+  margin-bottom: 45px;  
+}
+
 .catalog-filter__list {
   @include reset-list;
   margin-bottom: 47px;
 }
 
 .catalog-filter__item {
+  position: relative;
+  &:hover {
+    .catalog-filter__link {
+      color: $theme-color-2;
+    }
+    .catalog-filter__flower {
+      display: block;
+      fill: $theme-color-2;
+    }
+  }
+  &.active {
+    .catalog-filter__link {
+      color: $theme-color-1;
+    }
+    .catalog-filter__flower {
+      display: block;
+      fill: $theme-color-1;
+    }
+  }
   &:last-child {
     .catalog-filter__link {
-    border-bottom: 1px solid #d3d6d5;
+      border-bottom: 1px solid #d3d6d5;
     }
   }
 }
@@ -19,14 +42,6 @@
   color: #343434;
   font-size: 15px;
   line-height: 1;
-  &:hover {
-    color: #343434;
-  }
-  &.active {
-    background: url('../../img/flower.svg') 0 50% no-repeat;
-    background-size: 16px 16px;
-    color: $theme-color-1;
-  }
 }
 
 .catalog-filter__price-text {
@@ -52,7 +67,16 @@
   line-height: 1;
 }
 
-
 .catalog-filter__input {
   height: 35px;
+}
+
+.catalog-filter__flower {
+  display: none;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
