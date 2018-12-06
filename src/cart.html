@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Del Rio</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="page">
+  <header class="main-header main-header_innerpage">
+    <div class="main-header__top">
+      <div class="uk-container">
+        <div class="main-header__top-wrapper">
+          <div class="main-header__top-left">
+            <a class="main-header__logo" href="#">
+              <img class="main-header__logo-pic" src="img/logo.svg" alt="">
+            </a>
+            <ul class="main-header__services">
+              <li class="main-header__services-item">Доставка цветов</li>
+              <li class="main-header__services-item">Именные связки шаров</li>
+            </ul>
+          </div>
+          <a class="main-header__instagramm main-header__link">
+            <svg class="main-header__instagramm-icon" width="15" height="15">
+              <use xlink:href="/img/sprite.svg#instagramm"/>
+            </svg>
+            Мы в Instagram
+          </a>
+          <a class="main-header__tel main-header__link tel" href="tel:4742746580">
+            <svg class="main-header__tel-icon" width="16" height="16">
+              <use xlink:href="/img/sprite.svg#tel"/>
+            </svg>
+            <span class="tel__small-numbers">(4742)</span> 74-65-80
+          </a>
+          <a class="main-header__cart main-header__link" href="#">
+            <svg class="main-header__cart-icon"  width="20" height="18" >
+              <use xlink:href="/img/sprite.svg#cart"/>
+            </svg>
+            <span class="main-header__cart-text">Корзина</span>
+          </a>
+          <button class="tel-btn js-tel-btn" data-uk-toggle="target: .js-contacts-block; cls: active">
+            <svg class="tel-btn__icon" width="30" height="30">
+              <use xlink:href="/img/sprite.svg#tel"/>
+            </svg>
+          </button>
+          <button class="menu-btn js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu; cls: active">
+            <span class="menu-btn__icon menu-btn__icon-menu" data-uk-icon="icon: menu"></span>
+            <span class="menu-btn__icon menu-btn__icon-close" data-uk-icon="icon: close"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav js-menu" aria-label="Основное навигационное меню">
+      <div class="main-nav__bg"></div>
+      <div class="uk-container">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <span class="main-nav__link-text">
+                Каталог цветов
+              </span>
+              <span class="main-nav__link-bg"></span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <span class="main-nav__link-text">
+                Мастер-классы
+              </span>
+              <span class="main-nav__link-bg"></span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <span class="main-nav__link-text">
+                Доставка и оплата
+              </span>
+              <span class="main-nav__link-bg"></span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <span class="main-nav__link-text">
+                О нас
+              </span>
+              <span class="main-nav__link-bg"></span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <span class="main-nav__link-text">
+                Новости
+              </span>
+              <span class="main-nav__link-bg"></span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">
+              <span class="main-nav__link-text">
+                Контакты
+              </span>
+              <span class="main-nav__link-bg"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="contacts-block js-contacts-block">
+      <a class="contacts-block__tel tel" href="tel:4742746580">
+        <svg class="contacts-block__tel-icon" width="16" height="16">
+          <use xlink:href="/img/sprite.svg#tel"/>
+        </svg>
+        <span class="tel__small-numbers">(4742)</span> 74-65-80
+      </a>
+      <a class="contacts-block__instagramm">
+        <svg class="contacts-block__instagramm-icon" width="15" height="15">
+          <use xlink:href="/img/sprite.svg#instagramm"/>
+        </svg>
+        Мы в Instagram
+      </a>
+      <div class="contacts-block__address">
+        г. Липецк, ул. Первомайская, 80
+      </div>
+      <button class="contacts-block__close" data-uk-toggle="target: .js-contacts-block; cls: active" data-uk-icon="icon: close"></button>
+    </div>
+  </header>
+  <main class="cart innerpage">
+    <div class="uk-container">
+      <ul class="innerpage__breadcrumb uk-breadcrumb">
+        <li><a href="#">Главная</a></li>
+        <li><span>Корзина</span></li>
+      </ul>
+      <h1 class="innerpage__title">
+        Корзина
+      </h1>
+      <div class="cart__legend">
+        <span class="cart__legend-price">Цена</span>
+        <span class="cart__legend-count">Количество</span>
+      </div>
+      <form aria-label="Корзина">
+        <div class="cart__pool">
+          <div class="cart-item">
+            <div class="cart-item__leftside">
+              <a class="cart-item__photo-container uk-cover-container" href="#">
+                <img src="img/cart.jpg" data-uk-cover alt="">
+              </a>
+              <a class="cart-item__title" href="#">
+                Букет из пионов, питтоспорума и эвкалипта
+              </a>
+            </div>
+            <div class="cart-item__price">
+              3800 <span class="rubl">h</span>
+            </div>
+            <div class="cart-item__counter">
+              <div class="counter">
+                <button class="counter__btn js-counter-minus" type="button">-</button>
+                <input class="counter__input js-counter-input" type="text" value="1">
+                <button class="counter__btn js-counter-plus" type="button">+</button>
+              </div>
+            </div>
+            <div class="cart-item__close-btn-container">
+              <button class="cart-item__close-btn" type="button" data-uk-icon="icon: close"></button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item__leftside">
+              <a class="cart-item__photo-container uk-cover-container" href="#">
+                <img src="img/cart.jpg" data-uk-cover alt="">
+              </a>
+              <a class="cart-item__title" href="#">
+                Букет из пионов, питтоспорума и эвкалипта
+              </a>
+            </div>
+            <div class="cart-item__price">
+              3800 <span class="rubl">h</span>
+            </div>
+            <div class="cart-item__counter">
+              <div class="counter">
+                <button class="counter__btn js-counter-minus" type="button">-</button>
+                <input class="counter__input js-counter-input" type="text" value="1">
+                <button class="counter__btn js-counter-plus" type="button">+</button>
+              </div>
+            </div>
+            <div class="cart-item__close-btn-container">
+              <button class="cart-item__close-btn" type="button" data-uk-icon="icon: close"></button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item__leftside">
+              <a class="cart-item__photo-container uk-cover-container" href="#">
+                <img src="img/cart.jpg" data-uk-cover alt="">
+              </a>
+              <a class="cart-item__title" href="#">
+                Букет из пионов, питтоспорума и эвкалипта
+              </a>
+            </div>
+            <div class="cart-item__price">
+              3800 <span class="rubl">h</span>
+            </div>
+            <div class="cart-item__counter">
+              <div class="counter">
+                <button class="counter__btn js-counter-minus" type="button">-</button>
+                <input class="counter__input js-counter-input" type="text" value="1">
+                <button class="counter__btn js-counter-plus" type="button">+</button>
+              </div>
+            </div>
+            <div class="cart-item__close-btn-container">
+              <button class="cart-item__close-btn" type="button" data-uk-icon="icon: close"></button>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="cart-item__leftside">
+              <a class="cart-item__photo-container uk-cover-container" href="#">
+                <img src="img/cart.jpg" data-uk-cover alt="">
+              </a>
+              <a class="cart-item__title" href="#">
+                Букет из пионов, питтоспорума и эвкалипта
+              </a>
+            </div>
+            <div class="cart-item__price">
+              3800 <span class="rubl">h</span>
+            </div>
+            <div class="cart-item__counter">
+              <div class="counter">
+                <button class="counter__btn js-counter-minus" type="button">-</button>
+                <input class="counter__input js-counter-input" type="text" value="1">
+                <button class="counter__btn js-counter-plus" type="button">+</button>
+              </div>
+            </div>
+            <div class="cart-item__close-btn-container">
+              <button class="cart-item__close-btn" type="button" data-uk-icon="icon: close"></button>
+            </div>
+          </div>
+        </div>
+        <div class="cart__products-total">
+          <span class="cart__products-total-text">Итого:</span>
+          <span class="cart__products-total-price">28 800 <span class="rubl">h</span></span>
+        </div>
+      </form>
+      <form aria-label="Оформление заказа">
+        <section class="cart__contacts">
+          <h2>Контактные данные</h2>
+          <div class="cart__recipient">
+            <span class="cart__recipient-text">Кому доставить букет?</span>
+            <div class="cart__recipient-field">
+              <input class="cart__recipient-radio" id="recipient-to-me" type="radio" name="contacts-recipient">
+              <label class="cart__recipient-label" for="recipient-to-me">
+                <svg class="cart__recipient-label-flower">
+                  <use xlink:href="/img/sprite.svg#flower"/>
+                </svg>
+                <span class="cart__recipient-label-text">
+                  мне
+                </span>
+              </label>
+            </div>
+            <div class="cart__recipient-field">
+              <input class="cart__recipient-radio" id="recipient-to-recipient" type="radio" name="contacts-recipient" checked>
+              <label class="cart__recipient-label" for="recipient-to-recipient">
+                <svg class="cart__recipient-label-flower">
+                  <use xlink:href="/img/sprite.svg#flower"/>
+                </svg>
+                <span class="cart__recipient-label-text">
+                  получателю
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="cart__contacts-grid">
+            <div>
+              <div class="cart__row">
+                <label class="cart__field-label" for="contacts-your-name">
+                  Ваше имя
+                </label>
+                <div class="cart__field-rightside">
+                  <input class="cart__input uk-input" id="contacts-your-name" type="text" required>
+                </div>
+              </div>
+              <div class="cart__row">
+                <label class="cart__field-label" for="contacts-your-tel">
+                  Ваш телефон
+                </label>
+                <div class="cart__field-rightside">
+                  <input class="cart__input uk-input" id="contacts-your-tel" type="tel" required>
+                </div>
+              </div>
+              <div class="cart__row">
+                <label class="cart__field-label" for="contacts-your-email">
+                  E-mail
+                </label>
+                <div class="cart__field-rightside">
+                  <input class="cart__input uk-input" id="contacts-your-email" type="email">
+                </div>
+              </div>
+              <div class="cart__row">
+                <label class="cart__field-label" for="contacts-recipient-name">
+                  Имя получателя
+                </label>
+                <div class="cart__field-rightside">
+                  <input class="cart__input uk-input" id="contacts-recipient-name" type="text">
+                </div>
+              </div>
+              <div class="cart__row">
+                <label class="cart__field-label" for="contacts-recipient-tel">
+                  Телефон получателя
+                </label>
+                <div class="cart__field-rightside">
+                  <input class="cart__input uk-input" id="contacts-recipient-tel" type="tel">
+                  <div class="cart__additional-checkbox-field">
+                    <input class="cart__checkbox-input" id="contacts-no-recipient-tel" type="checkbox" name="contacts-no-recipient-tel">
+                    <label class="cart__checkbox-label" for="contacts-no-recipient-tel">
+                      Доставить без звонка получателю
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="cart__row">
+                <label class="cart__field-label" for="contacts-address">
+                  Адрес доставки
+                </label>
+                <div class="cart__field-rightside">
+                  <input class="cart__input uk-input" id="contacts-address" type="text">
+                  <div class="cart__additional-checkbox-field">
+                    <input class="cart__checkbox-input" id="contacts-no-recipient-address" type="checkbox" name="contacts-no-recipient-address">
+                    <label class="cart__checkbox-label" for="contacts-no-recipient-address">
+                      Не знаю адрес получателя, знаю только телефон
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="cart__row">
+                <label class="cart__field-label" for="contacts-date">
+                  Дата доставки
+                </label>
+                <div class="cart__field-rightside uk-position-relative">
+                  <input class="cart__input uk-input" id="contacts-date" type="date">
+                  <div class="cart__field-calendar">
+                     <img src="img/calendar.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="cart__row">
+                <label class="cart__field-label" for="contacts-time">
+                  Время доставки
+                </label>
+                <div class="cart__field-rightside">
+                  <input class="cart__input uk-input" id="contacts-time" type="text">
+                </div>
+              </div>
+              <div class="cart__row">
+                <label class="cart__field-label" for="contacts-wishes">
+                  Время доставки
+                </label>
+                <div class="cart__field-rightside">
+                  <textarea class="cart__textarea uk-textarea" id="contacts-wishes" name="contacts-wishes"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cart__delivery">
+          <h2>Способ доставки</h2>
+          <div class="cart__checkbox-group">
+            <div class="cart__checkbox-row">
+              <input class="cart__checkbox-input" id="contacts-delivery-1" type="radio" name="contacts-delivery">
+              <label class="cart__checkbox-label" for="contacts-delivery-1">
+                Доставка по городу
+              </label>
+            </div>
+            <div class="cart__checkbox-row">
+              <input class="cart__checkbox-input" id="contacts-delivery-2" type="radio" name="contacts-delivery">
+              <label class="cart__checkbox-label" for="contacts-delivery-2">
+                Доставка по городу в ночное время (с 22:00 до 8:00) заказ нужно оформить до 21-00 часа - 550р.
+              </label>
+            </div>
+            <div class="cart__checkbox-row">
+              <input class="cart__checkbox-input" id="contacts-delivery-3" type="radio" name="contacts-delivery">
+              <label class="cart__checkbox-label" for="contacts-delivery-3">
+                Самовывоз из магазина бесплатно
+              </label>
+            </div>
+            <div class="cart__checkbox-row">
+              <input class="cart__checkbox-input" id="contacts-delivery-4" type="radio" name="contacts-delivery">
+              <label class="cart__checkbox-label" for="contacts-delivery-4">
+                Доставка по области - по согласованию 10 р/км
+              </label>
+            </div>
+          </div>
+        </section>
+        <section class="cart__payment">
+          <h2>Способ оплаты</h2>
+          <div class="cart__checkbox-group">
+            <div class="cart__checkbox-row">
+              <input class="cart__checkbox-input" id="contacts-payment-1" type="radio" name="contacts-payment">
+              <label class="cart__checkbox-label" for="contacts-payment-1">
+                Оплата Банковской картой
+              </label>
+            </div>
+            <div class="cart__checkbox-row">
+              <input class="cart__checkbox-input" id="contacts-payment-2" type="radio" name="contacts-payment">
+              <label class="cart__checkbox-label" for="contacts-payment-2">
+                Наличными при получении
+              </label>
+            </div>
+            <div class="cart__checkbox-row">
+              <input class="cart__checkbox-input" id="contacts-payment-3" type="radio" name="contacts-payment">
+              <label class="cart__checkbox-label" for="contacts-payment-3">
+                Оплата по терминалу при получении
+              </label>
+            </div>
+          </div>
+        </section>
+        <div class="cart__total">
+          <div class="cart__total-row">
+            Товаров на сумму: <span class="cart__total-price">3800 <span class="rubl">h</span></span>
+          </div>
+          <div class="cart__total-row">
+            Доставка: <span class="cart__total-price">3800 <span class="rubl">h</span></span>
+          </div>
+          <div class="cart__total-final-row">
+            Итого: <span class="cart__total-final-price">28 800 <span class="rubl">h</span>
+          </div>
+        </div>
+        <button class="cart__button-link button-link" href="#">
+          <span class="button-link__text">Оформить заказ</span>
+          <span class="button-link__bg"></span>
+        </button>
+      </form>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="uk-container">
+      <div class="main-footer__top">
+        <nav class="main-footer__footer-nav footer-nav">
+          <ul class="footer-nav__list">
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Каталог цветов</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Мастер-классы</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">О нас</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Новости</a>
+            </li>
+            <li class="footer-nav__item">
+              <a class="footer-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="main-footer__tel tel" href="tel:4742746580">
+          <svg class="main-footer__tel-icon" width="16" height="16">
+            <use xlink:href="/img/sprite.svg#tel"/>
+          </svg>
+          <span class="tel__small-numbers">(4742)</span> 74-65-80
+        </a>
+      </div>
+      <div class="main-footer__bottom">
+        <div class="main-footer__owner">
+          © Del Rio, 2018
+        </div>
+        <a class="main-footer__policy" href="#">Политика конфиденциальности</a>
+        <a class="main-footer__devs" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="125" height="40" fill="#cacdcf" viewBox="0 0 936 316">
+            <path d="M136.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2
+              C141.2,192.6,140.1,196.6,136.9,198.3L136.9,198.3z M101.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8
+              l36.6-68.2c1.2-2.2,3.5-3.5,5.9-3.4c0.1,0,0.5,0,0.5,0c0.1,0,0.6,0,0.7,0c0.8,0.1,1,0.4,1.7,0.8
+              C102.1,120.4,103.2,124.4,101.5,127.5z"/>
+            <path d="M209.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8l36.6-68.2c1.7-3.2,5.7-4.3,8.8-2.6
+              C210.1,120.4,211.2,124.4,209.5,127.5L209.5,127.5z M168.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8
+              c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2C173.2,192.6,172.1,196.6,168.9,198.3L168.9,198.3z"/>
+            <path d="M240,128c0,0-12-1.2-12,9c0,8,5.7,10,14,13s15,4.3,20,13c4.2,7.4,4.3,21.1-6,29c-10.7,8.2-26.3,6.8-37,2c-4.5-2-4.2-7.3-3-9
+              s5.8-2.3,10,0s9.7,2.9,14,2c5.3-1.1,12.8-3.2,13-11s-2-10.5-12-14c-9-3.2-25.8-7.8-25-26c0.3-7.4,5.2-13,10.1-15.4
+              c7-3.5,13-3.8,17.9-2.6c3.8,1,17.3,5.7,14,12C253.6,138.5,245.8,128,240,128L240,128z"/>
+            <path d="M305,305V11H11v294H305 M316,316H0V0h316V316L316,316L316,316z"/>
+            <text style="font-family: 'Open Sans', sans-serif;
+            font-size: 110px; fill: #cacdcf;" x="400" y="130">Сделано в</text>
+            <text style="font-family: 'Open Sans', sans-serif;
+            font-size: 110px; letter-spacing: 3px; fill: #cacdcf;" x="400" y="270" textLength="550">#avsweb</text>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="bundle.js"></script>
+</body>
+
+</html>

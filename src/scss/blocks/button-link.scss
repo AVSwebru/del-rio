@@ -1,5 +1,6 @@
 .button-link {
   @include reset-link;
+  @include reset-btn;
   position: relative;
   display: inline-block;
   min-width: 170px;
@@ -7,9 +8,9 @@
   box-sizing: border-box;
   background-color: $theme-color-1;
   color: #fff;
-  line-height: 1;
   text-align: center;
   overflow: hidden;
+  cursor: pointer;
   &:hover {
     color: #fff;
     .button-link__bg {

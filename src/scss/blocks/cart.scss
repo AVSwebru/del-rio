@@ -1,0 +1,257 @@
+.cart__legend {
+  position: relative;
+  padding: 15px 0;
+}
+
+.cart__legend-price,
+.cart__legend-count {
+  color: #6d6d6d;
+  font-size: 14px;
+}
+
+.cart__legend-price {
+  position: relative;
+  left: 51.5%;
+}
+
+.cart__legend-count {
+  position: relative;
+  left: 67.5%;
+}
+
+.cart__pool {
+  margin-bottom: 20px;
+  border-top: 1px solid #d3d6d5;
+  border-bottom: 1px solid #d3d6d5;
+}
+
+.cart__products-total {
+  margin-bottom: 83px;
+  text-align: right;
+}
+
+.cart__products-total-text {
+  margin-right: 12px;
+  color: #6d6d6d;
+  font-size: 18px;
+}
+
+.cart__products-total-price {
+  color: #343434;
+  font-family: $font-decor;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.cart__contacts {
+  margin-bottom: 82px;
+}
+
+.cart__recipient {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.cart__recipient-field {
+  margin-left: 40px;
+  padding: 0 3px;
+  border-bottom: 1px solid #d3d6d5;
+}
+
+.cart__recipient-radio {
+  display: none;
+}
+
+.cart__recipient-radio:checked + .cart__recipient-label {
+  .cart__recipient-label-text {
+      color: $theme-color-1;
+      transform: translateX(0);
+      transition: transform 0.25s;
+  }
+  .cart__recipient-label-flower {
+    transform: scale(1) rotate(0);
+    transition: transform 0.25s;
+  }
+}
+
+.cart__recipient-label {
+  cursor: pointer;
+}
+
+.cart__recipient-label-flower {
+  width: 16px;
+  height: 16px;
+  fill: $theme-color-1;
+  transform: scale(0) rotate(-90deg);
+  transition: transform 0.25s;
+}
+
+.cart__recipient-label-text {
+  display: inline-block;
+  color: #686868;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transform: translateX(-9px);
+  transition: transform 0.25s;
+}
+
+.cart__recipient-text {
+  margin-right: 50px;
+  color: #343434;
+  font-size: 18px;
+}
+
+.cart__contacts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 100px;
+}
+
+.cart__row {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.cart__field-label {
+  width: 160px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  padding-right: 20px;
+  color: #343434;
+  font-size: 14px;
+}
+
+.cart__field-rightside {
+  flex-grow: 1;
+}
+
+.cart__input {
+  background-color: #e1e1e1;
+  &:focus {
+    box-shadow: 0 0 5px 1px rgba(3, 138, 98, 0.5);
+    background-color: #fff;
+  }
+}
+
+.cart__additional-checkbox-field {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.cart__checkbox-input {
+  display: none;
+}
+
+.cart__checkbox-input:checked + .cart__checkbox-label::after {
+  opacity: 1;
+  transition: opacity 0.25s;
+}
+
+.cart__checkbox-label {
+  position: relative;
+  padding-left: 34px;
+  color: #686868;
+  font-size: 14px;
+  cursor: pointer;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #c2c2c2;
+    background-color: #f6f5f5;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 13px;
+    height: 10px;
+    background: url('../../img/check.svg') 50% 50% no-repeat;
+    background-size: auto;
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+}
+
+.cart__textarea {
+  height: 140px;
+  resize: none;
+  background-color: #e1e1e1;
+  &:focus {
+    box-shadow: 0 0 5px 1px rgba(3, 138, 98, 0.5);
+    background-color: #fff;
+  }
+}
+
+.cart__field-calendar {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 38px;
+  border-left: 1px solid #fff;
+  background: #e1e1e1;
+}
+
+.cart__delivery {
+  margin-bottom: 100px;
+}
+
+.cart__checkbox-group {
+  margin-left: 12px;
+}
+
+.cart__checkbox-row {
+  margin-bottom: 13px;
+}
+
+.cart__payment {
+  margin-bottom: 87px;
+}
+
+.cart__total {
+  margin-bottom: 32px;
+  margin-left: 13px;
+}
+
+.cart__total-row {
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+
+.cart__total-final-row {
+  font-size: 18px;
+}
+
+.cart__total-price {
+  color: #343434;
+  font-family: $font-decor;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.cart__total-final-price {
+  color: #343434;
+  font-family: $font-decor;
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.cart__button-link {
+  min-width: 200px;
+  margin-left: 13px;
+}

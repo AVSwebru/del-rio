@@ -30,6 +30,8 @@
 }
 
 .main-header__logo-pic {
+  width: 130px;
+  height: 70px;
   @media (max-width: $breakpoint-small) {
     width: 100px;
     height: 50px;
