@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
   background: url('../../img/bg-menu.png') 0% 0% repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
   overflow: hidden;
   @media (max-width: $breakpoint-small) {

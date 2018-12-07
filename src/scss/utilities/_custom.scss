@@ -93,6 +93,8 @@ $breadcrumb-divider-margin-horizontal: 10px;
 $breadcrumb-item-color: #343434;
 $breadcrumb-item-active-color: #343434;
 
+.uk-breadcrumb > * { max-width: 100%; }
+
 // //slidenav
 // $slidenav-hover-color: $theme-color;
 

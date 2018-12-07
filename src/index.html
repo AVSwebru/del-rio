@@ -15,7 +15,7 @@
       <div class="uk-container">
         <div class="main-header__top-wrapper">
           <div class="main-header__top-left">
-            <a class="main-header__logo" href="#">
+            <a class="main-header__logo" href="#" title="Del Rio">
               <img class="main-header__logo-pic" src="img/logo.svg" alt="">
             </a>
             <ul class="main-header__services">
@@ -35,18 +35,18 @@
             </svg>
             <span class="tel__small-numbers">(4742)</span> 74-65-80
           </a>
-          <a class="main-header__cart main-header__link" href="#">
+          <a class="main-header__cart main-header__link" href="#" aria-label="Корзина">
             <svg class="main-header__cart-icon"  width="20" height="18" >
               <use xlink:href="/img/sprite.svg#cart"/>
             </svg>
             <span class="main-header__cart-text">Корзина</span>
           </a>
-          <button class="tel-btn js-tel-btn" data-uk-toggle="target: .js-contacts-block; cls: active">
+          <button class="tel-btn js-tel-btn" data-uk-toggle="target: .js-contacts-block; cls: active" aria-label="Показать контактную информацию">
             <svg class="tel-btn__icon" width="30" height="30">
               <use xlink:href="/img/sprite.svg#tel"/>
             </svg>
           </button>
-          <button class="menu-btn js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu; cls: active">
+          <button class="menu-btn js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu; cls: active" aria-label="Показать меню">
             <span class="menu-btn__icon menu-btn__icon-menu" data-uk-icon="icon: menu"></span>
             <span class="menu-btn__icon menu-btn__icon-close" data-uk-icon="icon: close"></span>
           </button>
@@ -124,7 +124,7 @@
       <div class="contacts-block__address">
         г. Липецк, ул. Первомайская, 80
       </div>
-      <button class="contacts-block__close" data-uk-toggle="target: .js-contacts-block; cls: active" data-uk-icon="icon: close"></button>
+      <button class="contacts-block__close" data-uk-toggle="target: .js-contacts-block; cls: active" data-uk-icon="icon: close" aria-label="Закрыть контактную информацию"></button>
     </div>
   </header>
   <main class="home">
@@ -165,11 +165,10 @@
     <section class="home-catalog">
       <div class="uk-container">
         <div class="home-catalog__wrapper">
-
           <div>
             <div class="bouquet-item">
-              <a class="bouquet-item__image-wrapper" href="#">
-                <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
+              <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
+                <img class="bouquet-item__image" data-src="img/bouquet-item.jpg" data-uk-img data-width="270" data-height="200" alt="">
               </a>
               <div class="bouquet-item__content">
                 <a class="bouquet-item__title" href="#">
@@ -189,8 +188,8 @@
           </div>
           <div>
             <div class="bouquet-item">
-              <a class="bouquet-item__image-wrapper" href="#">
-                <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
+              <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
+                <img class="bouquet-item__image" data-src="img/bouquet-item.jpg" data-uk-img data-width="270" data-height="200" alt="">
               </a>
               <div class="bouquet-item__content">
                 <a class="bouquet-item__title" href="#">
@@ -210,8 +209,8 @@
           </div>
           <div>
             <div class="bouquet-item">
-              <a class="bouquet-item__image-wrapper" href="#">
-                <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
+              <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
+                <img class="bouquet-item__image" data-src="img/bouquet-item.jpg" data-uk-img data-width="270" data-height="200" alt="">
               </a>
               <div class="bouquet-item__content">
                 <a class="bouquet-item__title" href="#">
@@ -231,8 +230,8 @@
           </div>
           <div>
             <div class="bouquet-item">
-              <a class="bouquet-item__image-wrapper" href="#">
-                <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
+              <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
+                <img class="bouquet-item__image" data-src="img/bouquet-item.jpg" data-uk-img data-width="270" data-height="200" alt="">
               </a>
               <div class="bouquet-item__content">
                 <a class="bouquet-item__title" href="#">
@@ -240,7 +239,7 @@
                 </a>
                 <div class="bouquet-item__bottom">
                   <div class="bouquet-item__price">
-                    3800 <span class="bouquet-item__price-rubl">h</span>
+                    3800 <span class="rubl bouquet-item__price-rubl">h</span>
                   </div>
                   <button class="button-order" type="button">
                     <span class="button-order__text">Заказать</span>
@@ -252,8 +251,8 @@
           </div>
           <div>
             <div class="bouquet-item">
-              <a class="bouquet-item__image-wrapper" href="#">
-                <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
+              <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
+                <img class="bouquet-item__image" data-src="img/bouquet-item.jpg" data-uk-img data-width="270" data-height="200" alt="">
               </a>
               <div class="bouquet-item__content">
                 <a class="bouquet-item__title" href="#">
@@ -261,7 +260,7 @@
                 </a>
                 <div class="bouquet-item__bottom">
                   <div class="bouquet-item__price">
-                    3800 <span class="bouquet-item__price-rubl">h</span>
+                    3800 <span class="rubl bouquet-item__price-rubl">h</span>
                   </div>
                   <button class="button-order" type="button">
                     <span class="button-order__text">Заказать</span>
@@ -273,8 +272,8 @@
           </div>
           <div>
             <div class="bouquet-item">
-              <a class="bouquet-item__image-wrapper" href="#">
-                <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
+              <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
+                <img class="bouquet-item__image" data-src="img/bouquet-item.jpg" data-uk-img data-width="270" data-height="200" alt="">
               </a>
               <div class="bouquet-item__content">
                 <a class="bouquet-item__title" href="#">
@@ -282,7 +281,7 @@
                 </a>
                 <div class="bouquet-item__bottom">
                   <div class="bouquet-item__price">
-                    3800 <span class="bouquet-item__price-rubl">h</span>
+                    3800 <span class="rubl bouquet-item__price-rubl">h</span>
                   </div>
                   <button class="button-order" type="button">
                     <span class="button-order__text">Заказать</span>
@@ -294,8 +293,8 @@
           </div>
           <div>
             <div class="bouquet-item">
-              <a class="bouquet-item__image-wrapper" href="#">
-                <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
+              <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
+                <img class="bouquet-item__image" data-src="img/bouquet-item.jpg" data-uk-img data-width="270" data-height="200" alt="">
               </a>
               <div class="bouquet-item__content">
                 <a class="bouquet-item__title" href="#">
@@ -303,7 +302,7 @@
                 </a>
                 <div class="bouquet-item__bottom">
                   <div class="bouquet-item__price">
-                    3800 <span class="bouquet-item__price-rubl">h</span>
+                    3800 <span class="rubl bouquet-item__price-rubl">h</span>
                   </div>
                   <button class="button-order" type="button">
                     <span class="button-order__text">Заказать</span>
@@ -362,7 +361,7 @@
                     </button>
                   </div>
                 </div>
-                <img class="master-anons__image" data-uk-cover src="img/master-anons.jpg" alt="">
+                <img class="master-anons__image" data-uk-cover data-src="img/master-anons.jpg" data-uk-img data-width="380" data-height="490" alt="">
               </div>
             </section>
           </div>
@@ -420,9 +419,9 @@
               <div class="master-albums__body">
                 <ul class="master-albums__list">
                   <li class="master-albums__item">
-                    <a class="master-albums__link">
+                    <a class="master-albums__link" href="#">
                       <span class="master-albums__preview uk-cover-container">
-                        <img data-uk-cover src="img/master-album-1.jpg" alt="">
+                        <img data-uk-cover data-src="img/master-album-1.jpg" data-width="100" data-height="100" data-uk-img alt="">
                       </span>
                       <span>
                         <span class="master-albums__date">
@@ -435,9 +434,9 @@
                     </a>
                   </li>
                   <li class="master-albums__item">
-                    <a class="master-albums__link">
+                    <a class="master-albums__link" href="#">
                       <span class="master-albums__preview uk-cover-container">
-                        <img data-uk-cover src="img/master-album-2.jpg" alt="">
+                        <img data-uk-cover data-src="img/master-album-2.jpg" data-width="100" data-height="100" data-uk-img alt="">
                       </span>
                       <span>
                         <span class="master-albums__date">
@@ -450,9 +449,9 @@
                     </a>
                   </li>
                   <li class="master-albums__item">
-                    <a class="master-albums__link">
+                    <a class="master-albums__link" href="#">
                       <span class="master-albums__preview uk-cover-container">
-                        <img data-uk-cover src="img/master-album-3.jpg" alt="">
+                        <img data-uk-cover data-src="img/master-album-3.jpg" data-width="100" data-height="100" data-uk-img alt="">
                       </span>
                       <span>
                         <span class="master-albums__date">
@@ -480,25 +479,25 @@
         <div class="random__wrapper">
           <div class="random__pic-container">
             <div class="random__pic-1-wrapper js-random-pic-1">
-              <img class="random__pic-1" width="50" height="50" src="img/random-item-1.svg" alt="">
+              <img class="random__pic-1" width="50" height="50" data-src="img/random-item-1.svg" data-uk-img alt="">
             </div>
             <div class="random__pic-2-wrapper js-random-pic-2">
-              <img class="random__pic-2" width="35" height="35" src="img/random-item-2.svg" alt="">
+              <img class="random__pic-2" width="35" height="35" data-src="img/random-item-2.svg" data-uk-img alt="">
             </div>
             <div class="random__pic-3-wrapper js-random-pic-3">
-              <img class="random__pic-3" width="20" height="10" src="img/random-item-3.svg" alt="">
+              <img class="random__pic-3" width="20" height="10" data-src="img/random-item-3.svg" data-uk-img alt="">
             </div>
             <div class="random__pic-4-wrapper js-random-pic-4">
-              <img class="random__pic-4" width="61" height="58" src="img/random-item-4.svg" alt="">
+              <img class="random__pic-4" width="61" height="58" data-src="img/random-item-4.svg" data-uk-img alt="">
             </div>
             <div class="random__pic-5-wrapper js-random-pic-5">
-              <img class="random__pic-5" width="65" height="65" src="img/random-item-5.svg" alt="">
+              <img class="random__pic-5" width="65" height="65" data-src="img/random-item-5.svg" data-uk-img alt="">
             </div>
             <div class="random__pic-6-wrapper js-random-pic-6">
-              <img class="random__pic-6" width="28" height="30" src="img/random-item-6.svg" alt="">
+              <img class="random__pic-6" width="28" height="30" data-src="img/random-item-6.svg" data-uk-img alt="">
             </div>
             <div class="random__pic-7-wrapper js-random-pic-7">
-              <img class="random__pic-7" width="40" height="40" src="img/random-item-7.svg" alt="">
+              <img class="random__pic-7" width="40" height="40" data-src="img/random-item-7.svg" data-uk-img alt="">
             </div>
           </div>
           <h2 class="random__title">
@@ -540,24 +539,24 @@
                 <div class="add-goods__slider uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow="min-height: 217; max-height: 217; animation: fade; autoplay: true">
                   <ul class="add-goods__slider-items uk-slideshow-items">
                     <li class="add-goods__item">
-                      <img class="add-goods__image" src="img/bear.png" alt="">
-                      <input class="button-action" value="добавить к букету">
+                      <img class="add-goods__image" data-src="img/bear.png" data-uk-img data-width="150" data-height="160" alt="">
+                      <input class="button-action" value="добавить к букету" aria-label="добавить к букету">
                     </li>
                     <li class="add-goods__item">
-                      <img class="add-goods__image" src="img/bear.png" alt="">
-                      <input class="button-action" value="добавить к букету">
+                      <img class="add-goods__image" data-src="img/bear.png" data-uk-img data-width="150" data-height="160" alt="">
+                      <input class="button-action" value="добавить к букету" aria-label="добавить к букету">
                     </li>
                     <li class="add-goods__item">
-                      <img class="add-goods__image" src="img/bear.png" alt="">
-                      <input class="button-action" value="добавить к букету">
+                      <img class="add-goods__image" data-src="img/bear.png" data-uk-img data-width="150" data-height="160" alt="">
+                      <input class="button-action" value="добавить к букету" aria-label="добавить к букету">
                     </li>
                   </ul>
-                  <a class="add-goods__slider-left-arrow" href="#" data-uk-slideshow-item="previous">
+                  <a class="add-goods__slider-left-arrow" href="#" data-uk-slideshow-item="previous" aria-label="предыдущий товар">
                     <svg class="add-goods__arrow add-goods__arrow-left">
                       <use xlink:href="/img/sprite.svg#arrow">
                     </svg>
                   </a>
-                  <a class="add-goods__slider-right-arrow" href="#" data-uk-slideshow-item="next">
+                  <a class="add-goods__slider-right-arrow" href="#" data-uk-slideshow-item="next" aria-label="следующий товар">
                     <svg class="add-goods__arrow add-goods__arrow-right">
                       <use xlink:href="/img/sprite.svg#arrow">
                     </svg>
@@ -572,7 +571,7 @@
     <section class="about js-about">
       <div class="about__wrapper">
         <div class="uk-cover-container js-about-photo-1">
-          <img class="about__photo" data-uk-cover src="img/about-photo-1.jpg" alt="">
+          <img data-uk-cover data-src="img/about-photo-1.jpg" data-uk-img data-width="650" data-height="500" alt="">
         </div>
         <div>
           <div class="about__content">
@@ -588,12 +587,12 @@
                 С 2000 г. является партнером всемирной организации «InterFlora», что позволяет клиентам Цветочного дома «Дель Рио» в течение 2 дней доставить букет своим родным и друзьям в 740 городов России и 160 стран ближнего и дальнего зарубежья.
               </p>
             </div>
-            <img class="about__decor-1" src="img/about-decor-1.svg" alt="">
-            <img class="about__decor-2" src="img/about-decor-2.svg" alt="">
+            <img class="about__decor-1" data-src="img/about-decor-1.png" data-uk-img data-width="155" data-height="250" alt="">
+            <img class="about__decor-2" data-src="img/about-decor-2.png" data-uk-img data-width="155" data-height="210" alt="">
           </div>
         </div>
         <div class="uk-cover-container js-about-photo-2">
-          <img class="about__photo" data-uk-cover src="img/about-photo-2.jpg" alt="">
+          <img data-uk-cover data-src="img/about-photo-2.jpg" data-uk-img data-width="650" data-height="500" alt="">
         </div>
       </div>
     </section>

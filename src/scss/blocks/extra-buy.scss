@@ -1,6 +1,9 @@
 .extra-buy {
-  border-image: linear-gradient(#ea5f58, #f37a2f) 1 / 3px;
+  max-width: 220px;
+  box-sizing: border-box;
   padding: 22px 17px 17px;
+  border: 3px solid #ea5f58;
+  border-image: linear-gradient(#ea5f58, #f37a2f) 1 / 3px;
 }
 
 .extra-buy__title {

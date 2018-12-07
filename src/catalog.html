@@ -206,49 +206,51 @@
                 </a>
               </li>
             </ul>
-            <div class="catalog-filter__price-text">
-              Цена букета:
-            </div>
-            <div class="catalog-filter__price-row">
-              <div class="catalog-filter__price-block">
-                <label class="catalog-filter__price-label" for="catalog-from">
-                  От:
-                </label>
-                <input class="catalog-filter__input uk-input" type="text" id="catalog-from">
+            <div class="catalog-filter__price">
+              <div class="catalog-filter__price-text">
+                Цена букета, ₽ :
               </div>
-              <div class="catalog-filter__price-block">
-                <label class="catalog-filter__price-label" for="catalog-to">
-                  До:
-                </label>
-                <input class="catalog-filter__input uk-input" type="text" id="catalog-to">
+              <div class="catalog-filter__price-row">
+                <div class="catalog-filter__price-block">
+                  <label class="catalog-filter__price-label" for="catalog-from">
+                    От:
+                  </label>
+                  <input class="catalog-filter__input uk-input" type="text" id="catalog-from">
+                </div>
+                <div class="catalog-filter__price-block">
+                  <label class="catalog-filter__price-label" for="catalog-to">
+                    До:
+                  </label>
+                  <input class="catalog-filter__input uk-input" type="text" id="catalog-to">
+                </div>
               </div>
             </div>
           </div>
           <section class="extra-buy">
-            <div class="extra-buy__title">
+            <h2 class="extra-buy__title">
               К букету можно приложить приятные товары
-            </div>
+            </h2>
             <div class="extra-buy__slider uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow="min-height: 217; max-height: 217; animation: fade; autoplay: true">
               <ul class="extra-buy__slider-items uk-slideshow-items">
                 <li class="extra-buy__item">
                   <img class="extra-buy__image" src="img/bear.png" alt="">
-                  <input class="button-action" value="добавить к букету">
+                  <input class="button-action" value="добавить к букету" aria-label="предыдущий товар">
                 </li>
                 <li class="extra-buy__item">
                   <img class="extra-buy__image" src="img/bear.png" alt="">
-                  <input class="button-action" value="добавить к букету">
+                  <input class="button-action" value="добавить к букету" aria-label="предыдущий товар">
                 </li>
                 <li class="extra-buy__item">
                   <img class="extra-buy__image" src="img/bear.png" alt="">
-                  <input class="button-action" value="добавить к букету">
+                  <input class="button-action" value="добавить к букету" aria-label="предыдущий товар">
                 </li>
               </ul>
-              <a class="extra-buy__slider-left-arrow" href="#" data-uk-slideshow-item="previous">
+              <a class="extra-buy__slider-left-arrow" href="#" data-uk-slideshow-item="previous" aria-label="предыдущий товар">
                 <svg class="extra-buy__arrow extra-buy__arrow-left">
                   <use xlink:href="/img/sprite.svg#arrow">
                 </svg>
               </a>
-              <a class="extra-buy__slider-right-arrow" href="#" data-uk-slideshow-item="next">
+              <a class="extra-buy__slider-right-arrow" href="#" data-uk-slideshow-item="next" aria-label="следующий товар">
                 <svg class="extra-buy__arrow extra-buy__arrow-right">
                   <use xlink:href="/img/sprite.svg#arrow">
                 </svg>
@@ -265,10 +267,137 @@
           <h1 class="innerpage__title">
             Букеты
           </h1>
+          <button class="catalog__filter-btn button-link" data-uk-toggle="target: #filter" type="button">Фильтр</button>
+          <div class="catalog-filter catalog-filter_adapt" id="filter" hidden>
+            <ul class="catalog-filter__list">
+              <li class="catalog-filter__item active">
+                <a href="#" class="catalog-filter__link">
+                  <svg class="catalog-filter__flower">
+                    <use xlink:href="/img/sprite.svg#flower"/>
+                  </svg>
+                  Букеты
+                </a>
+              </li>
+              <li class="catalog-filter__item">
+                <a href="#" class="catalog-filter__link">
+                  <svg class="catalog-filter__flower">
+                    <use xlink:href="/img/sprite.svg#flower"/>
+                  </svg>
+                  Авторские букеты
+                </a>
+              </li>
+              <li class="catalog-filter__item">
+                <a href="#" class="catalog-filter__link">
+                  <svg class="catalog-filter__flower">
+                    <use xlink:href="/img/sprite.svg#flower"/>
+                  </svg>
+                  Розы
+                </a>
+              </li>
+              <li class="catalog-filter__item">
+                <a href="#" class="catalog-filter__link">
+                  <svg class="catalog-filter__flower">
+                    <use xlink:href="/img/sprite.svg#flower"/>
+                  </svg>
+                  Цветы
+                </a>
+              </li>
+              <li class="catalog-filter__item">
+                <a href="#" class="catalog-filter__link">
+                  <svg class="catalog-filter__flower">
+                    <use xlink:href="/img/sprite.svg#flower"/>
+                  </svg>
+                  Композиции
+                </a>
+              </li>
+              <li class="catalog-filter__item">
+                <a href="#" class="catalog-filter__link">
+                  <svg class="catalog-filter__flower">
+                    <use xlink:href="/img/sprite.svg#flower"/>
+                  </svg>
+                  Свадебные букеты
+                </a>
+              </li>
+              <li class="catalog-filter__item">
+                <a href="#" class="catalog-filter__link">
+                  <svg class="catalog-filter__flower">
+                    <use xlink:href="/img/sprite.svg#flower"/>
+                  </svg>
+                  Горшечные растения
+                </a>
+              </li>
+              <li class="catalog-filter__item">
+                <a href="#" class="catalog-filter__link">
+                  <svg class="catalog-filter__flower">
+                    <use xlink:href="/img/sprite.svg#flower"/>
+                  </svg>
+                  День учителя
+                </a>
+              </li>
+              <li class="catalog-filter__item">
+                <a href="#" class="catalog-filter__link">
+                  <svg class="catalog-filter__flower">
+                    <use xlink:href="/img/sprite.svg#flower"/>
+                  </svg>
+                  Подарки
+                </a>
+              </li>
+            </ul>
+            <div class="catalog-filter__price">
+              <div class="catalog-filter__price-text">
+                Цена букета, ₽ :
+              </div>
+              <div class="catalog-filter__price-row">
+                <div class="catalog-filter__price-block">
+                  <label class="catalog-filter__price-label" for="catalog-from">
+                    От:
+                  </label>
+                  <input class="catalog-filter__input uk-input" type="text" id="catalog-from">
+                </div>
+                <div class="catalog-filter__price-block">
+                  <label class="catalog-filter__price-label" for="catalog-to">
+                    До:
+                  </label>
+                  <input class="catalog-filter__input uk-input" type="text" id="catalog-to">
+                </div>
+              </div>
+            </div>
+            <section class="extra-buy">
+              <h2 class="extra-buy__title">
+                К букету можно приложить приятные товары
+              </h2>
+              <div class="extra-buy__slider uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow="min-height: 217; max-height: 217; animation: fade; autoplay: true">
+                <ul class="extra-buy__slider-items uk-slideshow-items">
+                  <li class="extra-buy__item">
+                    <img class="extra-buy__image" src="img/bear.png" alt="">
+                    <input class="button-action" value="добавить к букету">
+                  </li>
+                  <li class="extra-buy__item">
+                    <img class="extra-buy__image" src="img/bear.png" alt="">
+                    <input class="button-action" value="добавить к букету">
+                  </li>
+                  <li class="extra-buy__item">
+                    <img class="extra-buy__image" src="img/bear.png" alt="">
+                    <input class="button-action" value="добавить к букету">
+                  </li>
+                </ul>
+                <a class="extra-buy__slider-left-arrow" href="#" data-uk-slideshow-item="previous">
+                  <svg class="extra-buy__arrow extra-buy__arrow-left">
+                    <use xlink:href="/img/sprite.svg#arrow">
+                  </svg>
+                </a>
+                <a class="extra-buy__slider-right-arrow" href="#" data-uk-slideshow-item="next">
+                  <svg class="extra-buy__arrow extra-buy__arrow-right">
+                    <use xlink:href="/img/sprite.svg#arrow">
+                  </svg>
+                </a>
+              </div>
+            </section>
+          </div>
           <div class="catalog__pool">
             <div>
               <div class="bouquet-item">
-                <a class="bouquet-item__image-wrapper" href="product.html">
+                <a class="bouquet-item__image-wrapper" href="product.html" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
                   <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
                 </a>
                 <div class="bouquet-item__content">
@@ -277,7 +406,7 @@
                   </a>
                   <div class="bouquet-item__bottom">
                     <div class="bouquet-item__price">
-                      3800 <span class="bouquet-item__price-rubl">h</span>
+                      3800 <span class="rubl">h</span>
                     </div>
                     <button class="button-order" type="button">
                       <span class="button-order__text">Заказать</span>
@@ -289,7 +418,7 @@
             </div>
             <div>
               <div class="bouquet-item">
-                <a class="bouquet-item__image-wrapper" href="#">
+                <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
                   <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
                 </a>
                 <div class="bouquet-item__content">
@@ -298,7 +427,7 @@
                   </a>
                   <div class="bouquet-item__bottom">
                     <div class="bouquet-item__price">
-                      3800 <span class="bouquet-item__price-rubl">h</span>
+                      3800 <span class="rubl">h</span>
                     </div>
                     <button class="button-order" type="button">
                       <span class="button-order__text">Заказать</span>
@@ -310,7 +439,7 @@
             </div>
             <div>
               <div class="bouquet-item">
-                <a class="bouquet-item__image-wrapper" href="#">
+                <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
                   <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
                 </a>
                 <div class="bouquet-item__content">
@@ -319,7 +448,7 @@
                   </a>
                   <div class="bouquet-item__bottom">
                     <div class="bouquet-item__price">
-                      3800 <span class="bouquet-item__price-rubl">h</span>
+                      3800 <span class="rubl">h</span>
                     </div>
                     <button class="button-order" type="button">
                       <span class="button-order__text">Заказать</span>

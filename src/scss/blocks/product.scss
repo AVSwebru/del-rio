@@ -1,12 +1,14 @@
-.product {
-
-}
-
 .product__wrapper {
   display: grid;
   grid-template-columns: 220px auto;
   grid-column-gap: 55px;
   margin-top: 60px;
+  @media (max-width: $breakpoint-medium) {
+    display: block;
+    & > div:nth-child(1) {
+      display: none;
+    }
+  }
 }
 
 .product__card {
@@ -14,6 +16,9 @@
   grid-template-columns: 1.25fr 1fr;
   grid-gap: 30px;
   margin-bottom: 92px;
+  @media (max-width: $breakpoint-small) {
+    grid-template-columns: auto;
+  }
 }
 
 .product__photo-wrapper {
