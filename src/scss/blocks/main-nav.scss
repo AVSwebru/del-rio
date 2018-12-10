@@ -109,7 +109,11 @@
      }
    }
   }
+  @media (max-width: $breakpoint-medium) {
+    font-size: 11px;
+  }
   @media (max-width: $breakpoint-small) {
+    font-size: 14px;
     &::after {
       content: '';
       position: absolute;

@@ -1,30 +1,44 @@
 var menuBtn = document.querySelector('.js-menu-btn');
 var telBtn = document.querySelector('.js-tel-btn');
 var menu = document.querySelector('.js-menu');
+var menuItems = menu.querySelectorAll('a');
 var contactsBlock = document.querySelector('.js-contacts-block');
+var contactsItems = contactsBlock.querySelectorAll('a');
+
+document.addEventListener('DOMContentLoaded', () => {
+  hideFocus(menuItems, -1);
+  hideFocus(contactsItems, -1);
+});
 
 menuBtn.addEventListener('click', () => {
+  if (menu.classList.contains('active')) {
+    hideFocus(menuItems, 0);
+  } else {
+    hideFocus(menuItems, -1);
+  }
   if (contactsBlock.classList.contains('active')) {
     telBtn.classList.remove('active');
     contactsBlock.classList.remove('active');
-    // hideFocus(contactsBlock, 0);
+      hideFocus(contactsItems, -1);
   }
-  // (menu.classList.contains('active')) ? hideFocus(menu, 0) : hideFocus(menu, -1);
-  // menu.setAttribute('aria-hidden', !(menu.classList.contains('active')));
 });
 
 telBtn.addEventListener('click', () => {
+  if (contactsBlock.classList.contains('active')) {
+    hideFocus(contactsItems, 0);
+  } else {
+    hideFocus(contactsItems, -1);
+  }
   if (menu.classList.contains('active')) {
     menuBtn.classList.remove('active');
     menu.classList.remove('active');
-    // menu.setAttribute('aria-hidden', true);
-    // hideFocus(menu, 0);
+    hideFocus(menuItems, -1);
   }
-  // (contactsBlock.classList.contains('active')) ? hideFocus(contactsBlock, 0) : hideFocus(contactsBlock, -1);
+
 });
 
-// function hideFocus(element, value) {
-//   element.querySelectorAll('a').forEach((link) => {
-//     link.setAttribute('tabindex', value);
-//   });
-// }
+function hideFocus(element, value) {
+  element.forEach((link) => {
+    link.setAttribute('tabindex', value);
+  });
+}
