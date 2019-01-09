@@ -10,355 +10,220 @@
 </head>
 
 <body class="page">
-  <header class="main-header main-header_innerpage">
-    <div class="main-header__top">
-      <div class="uk-container">
-        <div class="main-header__top-wrapper">
-          <div class="main-header__top-left">
-            <a class="main-header__logo" href="#">
-              <img class="main-header__logo-pic" src="img/logo.svg" alt="">
+  <div class="page__wrapper">
+    <header class="main-header main-header_innerpage">
+      <div class="main-header__top">
+        <div class="uk-container">
+          <div class="main-header__top-wrapper">
+            <div class="main-header__top-left">
+              <a class="main-header__logo" href="#">
+                <img class="main-header__logo-pic" src="img/logo.svg" alt="">
+              </a>
+              <ul class="main-header__services">
+                <li class="main-header__services-item">Доставка цветов</li>
+                <li class="main-header__services-item">Именные связки шаров</li>
+              </ul>
+            </div>
+            <a class="main-header__instagramm main-header__link">
+              <svg class="main-header__instagramm-icon" width="15" height="15">
+                <use xlink:href="/img/sprite.svg#instagramm"/>
+              </svg>
+              Мы в Instagram
             </a>
-            <ul class="main-header__services">
-              <li class="main-header__services-item">Доставка цветов</li>
-              <li class="main-header__services-item">Именные связки шаров</li>
-            </ul>
+            <a class="main-header__tel main-header__link tel" href="tel:4742746580">
+              <svg class="main-header__tel-icon" width="16" height="16">
+                <use xlink:href="/img/sprite.svg#tel"/>
+              </svg>
+              <span class="tel__small-numbers">(4742)</span> 74-65-80
+            </a>
+            <a class="main-header__cart main-header__link" href="#">
+              <svg class="main-header__cart-icon"  width="20" height="18" >
+                <use xlink:href="/img/sprite.svg#cart"/>
+              </svg>
+              <span class="main-header__cart-text">Корзина</span>
+            </a>
+            <button class="tel-btn js-tel-btn" data-uk-toggle="target: .js-contacts-block; cls: active">
+              <svg class="tel-btn__icon" width="30" height="30">
+                <use xlink:href="/img/sprite.svg#tel"/>
+              </svg>
+            </button>
+            <button class="menu-btn js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu; cls: active">
+              <span class="menu-btn__icon menu-btn__icon-menu" data-uk-icon="icon: menu"></span>
+              <span class="menu-btn__icon menu-btn__icon-close" data-uk-icon="icon: close"></span>
+            </button>
           </div>
-          <a class="main-header__instagramm main-header__link">
-            <svg class="main-header__instagramm-icon" width="15" height="15">
-              <use xlink:href="/img/sprite.svg#instagramm"/>
-            </svg>
-            Мы в Instagram
-          </a>
-          <a class="main-header__tel main-header__link tel" href="tel:4742746580">
-            <svg class="main-header__tel-icon" width="16" height="16">
-              <use xlink:href="/img/sprite.svg#tel"/>
-            </svg>
-            <span class="tel__small-numbers">(4742)</span> 74-65-80
-          </a>
-          <a class="main-header__cart main-header__link" href="#">
-            <svg class="main-header__cart-icon"  width="20" height="18" >
-              <use xlink:href="/img/sprite.svg#cart"/>
-            </svg>
-            <span class="main-header__cart-text">Корзина</span>
-          </a>
-          <button class="tel-btn js-tel-btn" data-uk-toggle="target: .js-contacts-block; cls: active">
-            <svg class="tel-btn__icon" width="30" height="30">
-              <use xlink:href="/img/sprite.svg#tel"/>
-            </svg>
-          </button>
-          <button class="menu-btn js-menu-btn" data-uk-toggle="target: .js-menu-btn, .js-menu; cls: active">
-            <span class="menu-btn__icon menu-btn__icon-menu" data-uk-icon="icon: menu"></span>
-            <span class="menu-btn__icon menu-btn__icon-close" data-uk-icon="icon: close"></span>
-          </button>
         </div>
       </div>
-    </div>
-    <nav class="main-nav js-menu" aria-label="Основное навигационное меню">
-      <div class="main-nav__bg"></div>
+      <nav class="main-nav js-menu" aria-label="Основное навигационное меню">
+        <div class="main-nav__bg"></div>
+        <div class="uk-container">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-text">
+                  Каталог цветов
+                </span>
+                <span class="main-nav__link-bg"></span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-text">
+                  Мастер-классы
+                </span>
+                <span class="main-nav__link-bg"></span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-text">
+                  Доставка и оплата
+                </span>
+                <span class="main-nav__link-bg"></span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-text">
+                  О нас
+                </span>
+                <span class="main-nav__link-bg"></span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-text">
+                  Новости
+                </span>
+                <span class="main-nav__link-bg"></span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">
+                <span class="main-nav__link-text">
+                  Контакты
+                </span>
+                <span class="main-nav__link-bg"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="contacts-block js-contacts-block">
+        <a class="contacts-block__tel tel" href="tel:4742746580">
+          <svg class="contacts-block__tel-icon" width="16" height="16">
+            <use xlink:href="/img/sprite.svg#tel"/>
+          </svg>
+          <span class="tel__small-numbers">(4742)</span> 74-65-80
+        </a>
+        <a class="contacts-block__instagramm">
+          <svg class="contacts-block__instagramm-icon" width="15" height="15">
+            <use xlink:href="/img/sprite.svg#instagramm"/>
+          </svg>
+          Мы в Instagram
+        </a>
+        <div class="contacts-block__address">
+          г. Липецк, ул. Первомайская, 80
+        </div>
+        <button class="contacts-block__close" data-uk-toggle="target: .js-contacts-block; cls: active" data-uk-icon="icon: close"></button>
+      </div>
+    </header>
+    <main class="catalog innerpage">
       <div class="uk-container">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
-              <span class="main-nav__link-text">
-                Каталог цветов
-              </span>
-              <span class="main-nav__link-bg"></span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
-              <span class="main-nav__link-text">
-                Мастер-классы
-              </span>
-              <span class="main-nav__link-bg"></span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
-              <span class="main-nav__link-text">
-                Доставка и оплата
-              </span>
-              <span class="main-nav__link-bg"></span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
-              <span class="main-nav__link-text">
-                О нас
-              </span>
-              <span class="main-nav__link-bg"></span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
-              <span class="main-nav__link-text">
-                Новости
-              </span>
-              <span class="main-nav__link-bg"></span>
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">
-              <span class="main-nav__link-text">
-                Контакты
-              </span>
-              <span class="main-nav__link-bg"></span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="contacts-block js-contacts-block">
-      <a class="contacts-block__tel tel" href="tel:4742746580">
-        <svg class="contacts-block__tel-icon" width="16" height="16">
-          <use xlink:href="/img/sprite.svg#tel"/>
-        </svg>
-        <span class="tel__small-numbers">(4742)</span> 74-65-80
-      </a>
-      <a class="contacts-block__instagramm">
-        <svg class="contacts-block__instagramm-icon" width="15" height="15">
-          <use xlink:href="/img/sprite.svg#instagramm"/>
-        </svg>
-        Мы в Instagram
-      </a>
-      <div class="contacts-block__address">
-        г. Липецк, ул. Первомайская, 80
-      </div>
-      <button class="contacts-block__close" data-uk-toggle="target: .js-contacts-block; cls: active" data-uk-icon="icon: close"></button>
-    </div>
-  </header>
-  <main class="catalog innerpage">
-    <div class="uk-container">
-      <div class="catalog__wrapper">
-        <div>
-          <div class="catalog-filter">
-            <ul class="catalog-filter__list">
-              <li class="catalog-filter__item active">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Букеты
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Авторские букеты
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Розы
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Цветы
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Композиции
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Свадебные букеты
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Горшечные растения
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  День учителя
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Подарки
-                </a>
-              </li>
-            </ul>
-            <div class="catalog-filter__price">
-              <div class="catalog-filter__price-text">
-                Цена букета, ₽ :
-              </div>
-              <div class="catalog-filter__price-row">
-                <div class="catalog-filter__price-block">
-                  <label class="catalog-filter__price-label" for="catalog-from">
-                    От:
-                  </label>
-                  <input class="catalog-filter__input uk-input" type="text" id="catalog-from">
-                </div>
-                <div class="catalog-filter__price-block">
-                  <label class="catalog-filter__price-label" for="catalog-to">
-                    До:
-                  </label>
-                  <input class="catalog-filter__input uk-input" type="text" id="catalog-to">
-                </div>
-              </div>
-            </div>
-          </div>
-          <section class="extra-buy">
-            <h2 class="extra-buy__title">
-              К букету можно приложить приятные товары
-            </h2>
-            <div class="extra-buy__slider uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow="min-height: 217; max-height: 217; animation: fade; autoplay: true">
-              <ul class="extra-buy__slider-items uk-slideshow-items">
-                <li class="extra-buy__item">
-                  <img class="extra-buy__image" src="img/bear.png" alt="">
-                  <input class="button-action" value="добавить к букету" aria-label="предыдущий товар">
+        <div class="catalog__wrapper">
+          <div>
+            <div class="catalog-filter">
+              <ul class="catalog-filter__list">
+                <li class="catalog-filter__item active">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Букеты
+                  </a>
                 </li>
-                <li class="extra-buy__item">
-                  <img class="extra-buy__image" src="img/bear.png" alt="">
-                  <input class="button-action" value="добавить к букету" aria-label="предыдущий товар">
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Авторские букеты
+                  </a>
                 </li>
-                <li class="extra-buy__item">
-                  <img class="extra-buy__image" src="img/bear.png" alt="">
-                  <input class="button-action" value="добавить к букету" aria-label="предыдущий товар">
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Розы
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Цветы
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Композиции
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Свадебные букеты
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Горшечные растения
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    День учителя
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Подарки
+                  </a>
                 </li>
               </ul>
-              <a class="extra-buy__slider-left-arrow" href="#" data-uk-slideshow-item="previous" aria-label="предыдущий товар">
-                <svg class="extra-buy__arrow extra-buy__arrow-left">
-                  <use xlink:href="/img/sprite.svg#arrow">
-                </svg>
-              </a>
-              <a class="extra-buy__slider-right-arrow" href="#" data-uk-slideshow-item="next" aria-label="следующий товар">
-                <svg class="extra-buy__arrow extra-buy__arrow-right">
-                  <use xlink:href="/img/sprite.svg#arrow">
-                </svg>
-              </a>
-            </div>
-          </section>
-        </div>
-        <div>
-          <ul class="innerpage__breadcrumb uk-breadcrumb">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Каталог цветов</a></li>
-            <li><span>Букеты</span></li>
-          </ul>
-          <h1 class="innerpage__title">
-            Букеты
-          </h1>
-          <button class="catalog__filter-btn button-link" data-uk-toggle="target: #filter" type="button">Фильтр</button>
-          <div class="catalog-filter catalog-filter_adapt" id="filter" hidden>
-            <ul class="catalog-filter__list">
-              <li class="catalog-filter__item active">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Букеты
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Авторские букеты
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Розы
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Цветы
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Композиции
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Свадебные букеты
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Горшечные растения
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  День учителя
-                </a>
-              </li>
-              <li class="catalog-filter__item">
-                <a href="#" class="catalog-filter__link">
-                  <svg class="catalog-filter__flower">
-                    <use xlink:href="/img/sprite.svg#flower"/>
-                  </svg>
-                  Подарки
-                </a>
-              </li>
-            </ul>
-            <div class="catalog-filter__price">
-              <div class="catalog-filter__price-text">
-                Цена букета, ₽ :
-              </div>
-              <div class="catalog-filter__price-row">
-                <div class="catalog-filter__price-block">
-                  <label class="catalog-filter__price-label" for="catalog-from">
-                    От:
-                  </label>
-                  <input class="catalog-filter__input uk-input" type="text" id="catalog-from">
+              <div class="catalog-filter__price">
+                <div class="catalog-filter__price-text">
+                  Цена букета, ₽ :
                 </div>
-                <div class="catalog-filter__price-block">
-                  <label class="catalog-filter__price-label" for="catalog-to">
-                    До:
-                  </label>
-                  <input class="catalog-filter__input uk-input" type="text" id="catalog-to">
+                <div class="catalog-filter__price-row">
+                  <div class="catalog-filter__price-block">
+                    <label class="catalog-filter__price-label" for="catalog-from">
+                      От:
+                    </label>
+                    <input class="catalog-filter__input uk-input" type="text" id="catalog-from">
+                  </div>
+                  <div class="catalog-filter__price-block">
+                    <label class="catalog-filter__price-label" for="catalog-to">
+                      До:
+                    </label>
+                    <input class="catalog-filter__input uk-input" type="text" id="catalog-to">
+                  </div>
                 </div>
               </div>
             </div>
@@ -370,23 +235,23 @@
                 <ul class="extra-buy__slider-items uk-slideshow-items">
                   <li class="extra-buy__item">
                     <img class="extra-buy__image" src="img/bear.png" alt="">
-                    <input class="button-action" value="добавить к букету">
+                    <input class="button-action" value="добавить к букету" aria-label="предыдущий товар">
                   </li>
                   <li class="extra-buy__item">
                     <img class="extra-buy__image" src="img/bear.png" alt="">
-                    <input class="button-action" value="добавить к букету">
+                    <input class="button-action" value="добавить к букету" aria-label="предыдущий товар">
                   </li>
                   <li class="extra-buy__item">
                     <img class="extra-buy__image" src="img/bear.png" alt="">
-                    <input class="button-action" value="добавить к букету">
+                    <input class="button-action" value="добавить к букету" aria-label="предыдущий товар">
                   </li>
                 </ul>
-                <a class="extra-buy__slider-left-arrow" href="#" data-uk-slideshow-item="previous">
+                <a class="extra-buy__slider-left-arrow" href="#" data-uk-slideshow-item="previous" aria-label="предыдущий товар">
                   <svg class="extra-buy__arrow extra-buy__arrow-left">
                     <use xlink:href="/img/sprite.svg#arrow">
                   </svg>
                 </a>
-                <a class="extra-buy__slider-right-arrow" href="#" data-uk-slideshow-item="next">
+                <a class="extra-buy__slider-right-arrow" href="#" data-uk-slideshow-item="next" aria-label="следующий товар">
                   <svg class="extra-buy__arrow extra-buy__arrow-right">
                     <use xlink:href="/img/sprite.svg#arrow">
                   </svg>
@@ -394,66 +259,203 @@
               </div>
             </section>
           </div>
-          <div class="catalog__pool">
-            <div>
-              <div class="bouquet-item">
-                <a class="bouquet-item__image-wrapper" href="product.html" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
-                  <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
-                </a>
-                <div class="bouquet-item__content">
-                  <a class="bouquet-item__title" href="product.html">
-                    Букет из пионов, питтоспорума и эвкалипта
+          <div>
+            <ul class="innerpage__breadcrumb uk-breadcrumb">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Каталог цветов</a></li>
+              <li><span>Букеты</span></li>
+            </ul>
+            <h1 class="innerpage__title">
+              Букеты
+            </h1>
+            <button class="catalog__filter-btn button-link" data-uk-toggle="target: #filter" type="button">Фильтр</button>
+            <div class="catalog-filter catalog-filter_adapt" id="filter" hidden>
+              <ul class="catalog-filter__list">
+                <li class="catalog-filter__item active">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Букеты
                   </a>
-                  <div class="bouquet-item__bottom">
-                    <div class="bouquet-item__price">
-                      3800 <span class="rubl">h</span>
-                    </div>
-                    <button class="button-order" type="button">
-                      <span class="button-order__text">Заказать</span>
-                      <span class="button-order__bg"></span>
-                    </button>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Авторские букеты
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Розы
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Цветы
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Композиции
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Свадебные букеты
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Горшечные растения
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    День учителя
+                  </a>
+                </li>
+                <li class="catalog-filter__item">
+                  <a href="#" class="catalog-filter__link">
+                    <svg class="catalog-filter__flower">
+                      <use xlink:href="/img/sprite.svg#flower"/>
+                    </svg>
+                    Подарки
+                  </a>
+                </li>
+              </ul>
+              <div class="catalog-filter__price">
+                <div class="catalog-filter__price-text">
+                  Цена букета, ₽ :
+                </div>
+                <div class="catalog-filter__price-row">
+                  <div class="catalog-filter__price-block">
+                    <label class="catalog-filter__price-label" for="catalog-from">
+                      От:
+                    </label>
+                    <input class="catalog-filter__input uk-input" type="text" id="catalog-from">
+                  </div>
+                  <div class="catalog-filter__price-block">
+                    <label class="catalog-filter__price-label" for="catalog-to">
+                      До:
+                    </label>
+                    <input class="catalog-filter__input uk-input" type="text" id="catalog-to">
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="bouquet-item">
-                <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
-                  <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
-                </a>
-                <div class="bouquet-item__content">
-                  <a class="bouquet-item__title" href="#">
-                    Букет из пионов, питтоспорума и эвкалипта
+              <section class="extra-buy">
+                <h2 class="extra-buy__title">
+                  К букету можно приложить приятные товары
+                </h2>
+                <div class="extra-buy__slider uk-position-relative uk-visible-toggle uk-light" data-uk-slideshow="min-height: 217; max-height: 217; animation: fade; autoplay: true">
+                  <ul class="extra-buy__slider-items uk-slideshow-items">
+                    <li class="extra-buy__item">
+                      <img class="extra-buy__image" src="img/bear.png" alt="">
+                      <input class="button-action" value="добавить к букету">
+                    </li>
+                    <li class="extra-buy__item">
+                      <img class="extra-buy__image" src="img/bear.png" alt="">
+                      <input class="button-action" value="добавить к букету">
+                    </li>
+                    <li class="extra-buy__item">
+                      <img class="extra-buy__image" src="img/bear.png" alt="">
+                      <input class="button-action" value="добавить к букету">
+                    </li>
+                  </ul>
+                  <a class="extra-buy__slider-left-arrow" href="#" data-uk-slideshow-item="previous">
+                    <svg class="extra-buy__arrow extra-buy__arrow-left">
+                      <use xlink:href="/img/sprite.svg#arrow">
+                    </svg>
                   </a>
-                  <div class="bouquet-item__bottom">
-                    <div class="bouquet-item__price">
-                      3800 <span class="rubl">h</span>
+                  <a class="extra-buy__slider-right-arrow" href="#" data-uk-slideshow-item="next">
+                    <svg class="extra-buy__arrow extra-buy__arrow-right">
+                      <use xlink:href="/img/sprite.svg#arrow">
+                    </svg>
+                  </a>
+                </div>
+              </section>
+            </div>
+            <div class="catalog__pool">
+              <div>
+                <div class="bouquet-item">
+                  <a class="bouquet-item__image-wrapper" href="product.html" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
+                    <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
+                  </a>
+                  <div class="bouquet-item__content">
+                    <a class="bouquet-item__title" href="product.html">
+                      Букет из пионов, питтоспорума и эвкалипта
+                    </a>
+                    <div class="bouquet-item__bottom">
+                      <div class="bouquet-item__price">
+                        3800 <span class="rubl">h</span>
+                      </div>
+                      <button class="button-order" type="button">
+                        <span class="button-order__text">Заказать</span>
+                        <span class="button-order__bg"></span>
+                      </button>
                     </div>
-                    <button class="button-order" type="button">
-                      <span class="button-order__text">Заказать</span>
-                      <span class="button-order__bg"></span>
-                    </button>
                   </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div class="bouquet-item">
-                <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
-                  <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
-                </a>
-                <div class="bouquet-item__content">
-                  <a class="bouquet-item__title" href="#">
-                    Букет из пионов, питтоспорума и эвкалипта
+              <div>
+                <div class="bouquet-item">
+                  <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
+                    <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
                   </a>
-                  <div class="bouquet-item__bottom">
-                    <div class="bouquet-item__price">
-                      3800 <span class="rubl">h</span>
+                  <div class="bouquet-item__content">
+                    <a class="bouquet-item__title" href="#">
+                      Букет из пионов, питтоспорума и эвкалипта
+                    </a>
+                    <div class="bouquet-item__bottom">
+                      <div class="bouquet-item__price">
+                        3800 <span class="rubl">h</span>
+                      </div>
+                      <button class="button-order" type="button">
+                        <span class="button-order__text">Заказать</span>
+                        <span class="button-order__bg"></span>
+                      </button>
                     </div>
-                    <button class="button-order" type="button">
-                      <span class="button-order__text">Заказать</span>
-                      <span class="button-order__bg"></span>
-                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="bouquet-item">
+                  <a class="bouquet-item__image-wrapper" href="#" title="Букет из пионов, питтоспорума и эвкалипта" tabindex="-1">
+                    <img class="bouquet-item__image" src="img/bouquet-item.jpg" alt="">
+                  </a>
+                  <div class="bouquet-item__content">
+                    <a class="bouquet-item__title" href="#">
+                      Букет из пионов, питтоспорума и эвкалипта
+                    </a>
+                    <div class="bouquet-item__bottom">
+                      <div class="bouquet-item__price">
+                        3800 <span class="rubl">h</span>
+                      </div>
+                      <button class="button-order" type="button">
+                        <span class="button-order__text">Заказать</span>
+                        <span class="button-order__bg"></span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -461,67 +463,67 @@
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer class="main-footer">
-    <div class="uk-container">
-      <div class="main-footer__top">
-        <nav class="main-footer__footer-nav footer-nav">
-          <ul class="footer-nav__list">
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Каталог цветов</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Мастер-классы</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Доставка и оплата</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">О нас</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Новости</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="main-footer__tel tel" href="tel:4742746580">
-          <svg class="main-footer__tel-icon" width="16" height="16">
-            <use xlink:href="/img/sprite.svg#tel"/>
-          </svg>
-          <span class="tel__small-numbers">(4742)</span> 74-65-80
-        </a>
-      </div>
-      <div class="main-footer__bottom">
-        <div class="main-footer__owner">
-          © Del Rio, 2018
+    </main>
+    <footer class="main-footer">
+      <div class="uk-container">
+        <div class="main-footer__top">
+          <nav class="main-footer__footer-nav footer-nav">
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Каталог цветов</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Мастер-классы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">О нас</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Новости</a>
+              </li>
+              <li class="footer-nav__item">
+                <a class="footer-nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="main-footer__tel tel" href="tel:4742746580">
+            <svg class="main-footer__tel-icon" width="16" height="16">
+              <use xlink:href="/img/sprite.svg#tel"/>
+            </svg>
+            <span class="tel__small-numbers">(4742)</span> 74-65-80
+          </a>
         </div>
-        <a class="main-footer__policy" href="#">Политика конфиденциальности</a>
-        <a class="main-footer__devs" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="125" height="40" fill="#cacdcf" viewBox="0 0 936 316">
-            <path d="M136.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2
-              C141.2,192.6,140.1,196.6,136.9,198.3L136.9,198.3z M101.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8
-              l36.6-68.2c1.2-2.2,3.5-3.5,5.9-3.4c0.1,0,0.5,0,0.5,0c0.1,0,0.6,0,0.7,0c0.8,0.1,1,0.4,1.7,0.8
-              C102.1,120.4,103.2,124.4,101.5,127.5z"/>
-            <path d="M209.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8l36.6-68.2c1.7-3.2,5.7-4.3,8.8-2.6
-              C210.1,120.4,211.2,124.4,209.5,127.5L209.5,127.5z M168.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8
-              c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2C173.2,192.6,172.1,196.6,168.9,198.3L168.9,198.3z"/>
-            <path d="M240,128c0,0-12-1.2-12,9c0,8,5.7,10,14,13s15,4.3,20,13c4.2,7.4,4.3,21.1-6,29c-10.7,8.2-26.3,6.8-37,2c-4.5-2-4.2-7.3-3-9
-              s5.8-2.3,10,0s9.7,2.9,14,2c5.3-1.1,12.8-3.2,13-11s-2-10.5-12-14c-9-3.2-25.8-7.8-25-26c0.3-7.4,5.2-13,10.1-15.4
-              c7-3.5,13-3.8,17.9-2.6c3.8,1,17.3,5.7,14,12C253.6,138.5,245.8,128,240,128L240,128z"/>
-            <path d="M305,305V11H11v294H305 M316,316H0V0h316V316L316,316L316,316z"/>
-            <text style="font-family: 'Open Sans', sans-serif;
-            font-size: 110px; fill: #cacdcf;" x="400" y="130">Сделано в</text>
-            <text style="font-family: 'Open Sans', sans-serif;
-            font-size: 110px; letter-spacing: 3px; fill: #cacdcf;" x="400" y="270" textLength="550">#avsweb</text>
-          </svg>
-        </a>
+        <div class="main-footer__bottom">
+          <div class="main-footer__owner">
+            © Del Rio, 2018
+          </div>
+          <a class="main-footer__policy" href="#">Политика конфиденциальности</a>
+          <a class="main-footer__devs" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="125" height="40" fill="#cacdcf" viewBox="0 0 936 316">
+              <path d="M136.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2
+                C141.2,192.6,140.1,196.6,136.9,198.3L136.9,198.3z M101.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8
+                l36.6-68.2c1.2-2.2,3.5-3.5,5.9-3.4c0.1,0,0.5,0,0.5,0c0.1,0,0.6,0,0.7,0c0.8,0.1,1,0.4,1.7,0.8
+                C102.1,120.4,103.2,124.4,101.5,127.5z"/>
+              <path d="M209.5,127.5l-36.6,68.2c-1.7,3.2-5.7,4.3-8.8,2.6c-3.2-1.7-4.3-5.7-2.6-8.8l36.6-68.2c1.7-3.2,5.7-4.3,8.8-2.6
+                C210.1,120.4,211.2,124.4,209.5,127.5L209.5,127.5z M168.9,198.3c-3.2,1.7-7.1,0.6-8.8-2.6l-36.6-68.2c-1.7-3.2-0.6-7.1,2.6-8.8
+                c3.2-1.7,7.1-0.6,8.8,2.6l36.6,68.2C173.2,192.6,172.1,196.6,168.9,198.3L168.9,198.3z"/>
+              <path d="M240,128c0,0-12-1.2-12,9c0,8,5.7,10,14,13s15,4.3,20,13c4.2,7.4,4.3,21.1-6,29c-10.7,8.2-26.3,6.8-37,2c-4.5-2-4.2-7.3-3-9
+                s5.8-2.3,10,0s9.7,2.9,14,2c5.3-1.1,12.8-3.2,13-11s-2-10.5-12-14c-9-3.2-25.8-7.8-25-26c0.3-7.4,5.2-13,10.1-15.4
+                c7-3.5,13-3.8,17.9-2.6c3.8,1,17.3,5.7,14,12C253.6,138.5,245.8,128,240,128L240,128z"/>
+              <path d="M305,305V11H11v294H305 M316,316H0V0h316V316L316,316L316,316z"/>
+              <text style="font-family: 'Open Sans', sans-serif;
+              font-size: 110px; fill: #cacdcf;" x="400" y="130">Сделано в</text>
+              <text style="font-family: 'Open Sans', sans-serif;
+              font-size: 110px; letter-spacing: 3px; fill: #cacdcf;" x="400" y="270" textLength="550">#avsweb</text>
+            </svg>
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
   <script src="bundle.js"></script>
 </body>
 
