@@ -2,6 +2,9 @@
   background: #060709 url('../../img/bg-intro.jpg') 50% 50% no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  @media (max-width: $breakpoint-small) {
+    background-attachment: scroll;
+  }
 }
 
 .home-intro__wrapper {
