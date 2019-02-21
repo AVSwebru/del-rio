@@ -1,0 +1,36 @@
+.master-desc__box {
+  display: flex;
+  margin-bottom: 170px;
+  @media (max-width: $breakpoint-small) {
+    display: block;
+  }
+}
+
+.master-desc__image-container {
+  width: 260px;
+  min-width: 260px;
+  height: 200px;
+  margin-right: 30px;
+  @media (max-width: $breakpoint-small) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.master-desc__text {
+  color: #2d2d2d;
+}
+
+.master-desc__price {
+  margin-bottom: 30px;
+  color: #2d2d2d;
+}
+
+.master-desc__price-number {
+  color: #343434;
+  font-family: $font-decor;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+}
+

@@ -1,0 +1,29 @@
+.delivery-item {
+  display: flex;
+  padding-top: 25px;
+  margin-bottom: 120px;
+  border-top: 1px solid #e1e1e1;
+  @media (max-width: $breakpoint-medium) {
+    display: block;
+  }
+}
+
+.delivery-item__title {
+  width: 260px;
+  min-width: 260px;
+  margin-right: 20px;
+  color: #2d2d2d;
+  font-family: $font-base;
+  font-size: 20px;
+  font-weight: 700;
+  @media (max-width: $breakpoint-medium) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.delivery-item__text {
+  flex-grow: 1;
+  color: #5b5b5b;
+  font-size: 14px;
+}

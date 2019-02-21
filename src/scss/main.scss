@@ -6,7 +6,7 @@
 @import "blocks/home-intro";
 @import "blocks/main-nav";
 @import "blocks/button-link";
-@import "blocks/master";
+@import "blocks/home-masters";
 @import "blocks/master-anons";
 @import "blocks/button-transparent";
 @import "blocks/master-schedule";
@@ -21,7 +21,7 @@
 @import "blocks/services";
 @import "blocks/service-item";
 @import "blocks/add-goods";
-@import "blocks/about";
+@import "blocks/home-about";
 @import "blocks/tel";
 @import "blocks/main-footer";
 @import "blocks/footer-nav";
@@ -37,3 +37,10 @@
 @import "blocks/cart";
 @import "blocks/cart-item";
 @import "blocks/counter";
+@import "blocks/about";
+@import "blocks/contacts";
+@import "blocks/masters";
+@import "blocks/master-card";
+@import "blocks/master-desc";
+@import "blocks/master-gallery";
+@import "blocks/delivery-item";

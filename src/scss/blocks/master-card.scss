@@ -1,0 +1,64 @@
+.master-card {
+  @include reset-link;
+  display: block;
+  transition: box-shadow 0.25s;
+  &:hover {
+    box-shadow: 5px 9px 28px rgba(208, 204, 215, 0.86);
+    transition: box-shadow 0.25s;
+    .master-card__title {
+      color: $theme-color-1;
+      transition: color 0.25s;
+    }
+    .master-card__more {
+      background-color: $theme-color-1;
+      color: #fff;
+      transition: color 0.25s, background-color 0.25s;
+    }
+  }
+}
+
+.master-card__image {
+  display: block;
+  height: 200px;
+}
+
+.master-card__content {
+  display: block;
+  padding: 25px 15px 35px;
+  background-color: #e6e6e6;
+}
+
+.master-card__date {
+  display: block;
+  margin-bottom: 20px;
+  color: #343434;
+  font-family: $font-decor;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1;
+}
+
+.master-card__title {
+  display: block;
+  font-family: $font-base;
+  margin: 0 0 35px;
+  color: #343434;
+  font-size: 18px;
+  font-weight: 400;
+  transition: color 0.25s;
+}
+
+.master-card__more {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18px;
+  border: 1px solid #c2c2c2;
+  text-align: center;
+  color: #343434;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: color 0.25s, background-color 0.25s;
+}

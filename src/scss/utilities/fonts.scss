@@ -1,14 +1,13 @@
 @font-face {
   font-family: "ALSRubl";
-  src: url("../fonts/ALSRubl/ALSRubl.woff");
+  src: url("../fonts/ALSRubl.woff") format("woff");
   font-weight: 700;
   font-style: italic;
 }
 
-
 @font-face {
   font-family: "Philosopher";
-  src: url("../fonts/Philosopher/Philosopher-Bold.woff"),
+  src: url("../fonts/Philosopher-Bold.woff") format("woff"),
     local("Philosopher Bold"), local("Philosopher-Bold");
   font-weight: bold;
   font-style: normal;
@@ -16,7 +15,7 @@
 
 @font-face {
   font-family: "Philosopher";
-  src: url("../fonts/Philosopher/Philosopher-BoldItalic.woff"),
+  src: url("../fonts/Philosopher-BoldItalic.woff") format("woff"),
     local("Philosopher BoldItalic"), local("Philosopher-BoldItalic");
   font-weight: bold;
   font-style: italic;
@@ -24,7 +23,7 @@
 
 @font-face {
   font-family: "Philosopher";
-  src: url("../fonts/Philosopher/Philosopher-Italic.woff"),
+  src: url("../fonts/Philosopher-Italic.woff") format("woff"),
     local("Philosopher Italic"), local("Philosopher-Italic");
   font-weight: normal;
   font-style: italic;
@@ -32,7 +31,7 @@
 
 @font-face {
   font-family: "SegoeUI";
-  src: url("../fonts/SegoeUI/SegoeUI-SemiBold.woff"),
+  src: url("../fonts/SegoeUI-SemiBold.woff") format("woff"),
     local("SegoeUI SemiBold"), local("SegoeUI-SemiBold");
   font-weight: 600;
   font-style: normal;
@@ -40,7 +39,7 @@
 
 @font-face {
   font-family: "SegoeUI";
-  src: url("../fonts/SegoeUI/SegoeUI.woff"),
+  src: url("../fonts/SegoeUI.woff") format("woff"),
     local("SegoeUI"), local("SegoeUI");
   font-weight: normal;
   font-style: normal;

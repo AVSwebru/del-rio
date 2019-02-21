@@ -4,10 +4,18 @@
 }
 
 .innerpage__title {
-  margin: 30px 0;
+  margin-top: 30px;
   color: #202020;
   font-family: $font-decor;
   font-size: 36px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.1;
+  &_default {
+    margin-bottom: 30px;
+  }
+  &_underlined {
+    padding-bottom: 25px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #e1e1e1;
+  }
 }
