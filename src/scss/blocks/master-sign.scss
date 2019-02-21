@@ -1,0 +1,84 @@
+.master-sign {
+  position: relative;
+  padding: 40px;
+  background: $theme-color-1;
+  @media (max-width: $breakpoint-small) {
+    padding: 0;
+  }
+}
+
+.master-sign__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 85px 80px;
+  background: url('../img/bg-master-sign.jpg') 50% 50% no-repeat;
+  background-size: cover;
+  @media (max-width: $breakpoint-small) {
+    padding: 40px 20px;
+  }
+}
+
+.master-sign__title {
+  margin-bottom: 35px;
+  font-size: 32px;
+  @media (max-width: $breakpoint-small) {
+    font-size: 22px;
+  }
+}
+
+.master-sign__inner {
+  width: 265px;
+  @media (max-width: $breakpoint-small) {
+    width: 100%;
+  }
+}
+
+.master-sign__field {
+  margin-bottom: 30px;
+}
+
+.master-sign__label {
+  color: #2d2d2d;
+  font-size: 16px;
+}
+
+.master-sign__input {
+  &:focus {
+    box-shadow: 0 0 7px 1px rgba(3, 136, 96, 0.4);
+  }
+}
+.master-sign__submit {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.master-sign__agreement {
+  color: #7b7b7b;
+  font-size: 14px;
+  line-height: 1.3;
+  a {
+    color: #7b7b7b;
+    text-decoration: underline;
+  }
+}
+
+.master-sign__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+  &:hover {
+    color: #fff;
+  }
+  @media (max-width: $breakpoint-small) {
+    color: #202020;
+    &:hover {
+      color: #202020;
+    }
+  }
+}

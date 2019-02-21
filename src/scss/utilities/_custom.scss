@@ -45,8 +45,8 @@ $breadcrumb-item-active-color: #343434;
 
 .uk-breadcrumb > * { max-width: 100%; }
 
-// //slidenav
-// $slidenav-hover-color: $theme-color;
+//modal
+$modal-dialog-width: 595px;
 
 // 4. Import UIkit.
 @import "uikit/src/scss/uikit-theme.scss";

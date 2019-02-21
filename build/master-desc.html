@@ -152,7 +152,7 @@
             <div class="master-desc__price">
               Цена: <span class="master-desc__price-number">3800 <span class="rubl">h</span></span>
             </div>
-            <button class="button-link">
+            <button class="button-link" data-uk-toggle="target: #master-sign">
               <span class="button-link__text">Записаться</span>
               <span class="button-link__bg"></span>
             </button>
@@ -288,6 +288,37 @@
           </div>
         </div>
       </footer>
+      <div id="master-sign" data-uk-modal>
+        <div class="master-sign uk-modal-dialog">
+          <form class="master-sign__form">
+            <h2 class="master-sign__title">Запись на мастер-класс</h2>
+            <div class="master-sign__inner">
+              <div class="master-sign__field">
+                <label class="master-sign__label">
+                  Имя<br>
+                  <input class="master-sign__input uk-input" type="text" name="name" required>
+                </label>
+              </div>
+              <div class="master-sign__field">
+                <label class="master-sign__label">
+                  Телефон<br>
+                  <input class="master-sign__input uk-input" type="tel" name="tel" required>
+                </label>
+              </div>
+              <button class="master-sign__submit button-link" type="submit">
+                <span class="button-link__text">Отправить</span>
+                <span class="button-link__bg"></span>
+              </button>
+              <div class="master-sign__agreement">
+                  Нажимая на кнопку «Отправить»,<br>
+                  вы даёте согласие на обработку 
+                  <a href="#">персональных данных</a>
+              </div>
+            </div>
+          </form>
+          <button class="master-sign__close uk-modal-close" type="button" data-uk-close></button>
+        </div>
+      </div>
     </div>
     <script src="bundle.js"></script>
   </body>
