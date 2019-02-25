@@ -1,4 +1,4 @@
-.master__albums {
+.home-masters__albums {
   display: flex;
   flex-direction: column;
 }
@@ -12,7 +12,7 @@
   height: 100%;
   box-sizing: border-box;
   padding: 47px 0 22px;
-  background: #e4e1e1 url('../../img/bg-master-albums.jpg') 50% 50% no-repeat;
+  background: #e4e1e1 url('../img/bg-masters-albums.jpg') 50% 50% no-repeat;
   background-size: cover;
 }
 

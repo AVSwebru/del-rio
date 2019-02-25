@@ -5,11 +5,11 @@
   justify-content: center;
   height: 100%;
   &_interior {
-    background: #303644 url('../../img/bg-interior.jpg') 50% 50% no-repeat;
+    background: #303644 url('../img/bg-interior.jpg') 50% 50% no-repeat;
     background-size: cover;
   }
   &_floristics {
-    background: #303644 url('../../img/bg-floristics.jpg') 50% 50% no-repeat;
+    background: #303644 url('../img/bg-floristics.jpg') 50% 50% no-repeat;
     background-size: cover;
   }
   &:hover {

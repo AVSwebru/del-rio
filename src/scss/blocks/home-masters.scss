@@ -1,9 +1,9 @@
-.master {
+.home-masters {
   padding: 63px 0 88px;
   background-color: #e6e3e8;
 }
 
-.master__title {
+.home-masters__title {
   margin-bottom: 45px;
   color: #202020;
   font-family: $font-decor;
@@ -12,7 +12,7 @@
   line-height: 1;
 }
 
-.master__grid {
+.home-masters__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 30px;
@@ -34,7 +34,7 @@
   }
 }
 
-.master__section-title {
+.home-masters__section-title {
   margin-bottom: 25px;
   font-family: $font-base;
   font-weight: 400;
