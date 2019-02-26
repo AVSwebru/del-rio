@@ -113,9 +113,9 @@ import { Sine } from 'gsap';
     if (document.querySelector('.js-contactspage')) {
       const contactsPageTween = new TimelineMax();
       contactsPageTween
-        .from('.js-contacts-flower', 1, { opacity: 0, ease: Power3. easeOut })
-        .from('.js-contacts-item', 1, { opacity: 0, ease: Power3. easeOut })
-        .from('.js-contacts-item-inner', 1, { opacity: 0, y: 50, ease: Power3. easeOut });
+        .from('.js-contacts-flower', 0.5, { opacity: 0, ease: Power3. easeOut })
+        .from('.js-contacts-item', 0.5, { opacity: 0, ease: Power3. easeOut })
+        .from('.js-contacts-item-inner', 0.5, { opacity: 0, y: 50, ease: Power3. easeOut });
     }
 
   });
