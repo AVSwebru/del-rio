@@ -1,0 +1,6 @@
+.show-more {
+  display: none;
+  @media (max-width: $breakpoint-small) {
+    display: block;
+  }
+}

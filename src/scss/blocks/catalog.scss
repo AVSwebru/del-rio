@@ -1,7 +1,3 @@
-.catalog {
-
-}
-
 .catalog__wrapper {
   display: grid;
   grid-template-columns: 220px auto;
@@ -18,6 +14,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, 273px);
   grid-gap: 15px;
+  margin-bottom: 70px;
 }
 
 .catalog__filter-btn {

@@ -1,6 +1,8 @@
 .master-card {
   @include reset-link;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 0.25s;
   &:hover {
     box-shadow: 5px 9px 28px rgba(208, 204, 215, 0.86);
@@ -23,6 +25,7 @@
 }
 
 .master-card__content {
+  flex-grow: 1;
   display: block;
   padding: 25px 15px 35px;
   background-color: #e6e6e6;

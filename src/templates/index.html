@@ -24,7 +24,7 @@
                 <li class="main-header__services-item">Именные связки шаров</li>
               </ul>
             </div>
-            <a class="main-header__instagramm main-header__link">
+            <a class="main-header__instagramm main-header__link" href="#">
               <svg class="main-header__instagramm-icon" width="15" height="15">
                 <use xlink:href="img/sprite.svg#instagramm"/>
               </svg>
@@ -172,9 +172,37 @@
                   <img class="bouquet-item__image" data-src="../img/bouquet-item.jpg" data-uk-img data-width="270" data-height="200" alt="">
                 </a>
                 <div class="bouquet-item__content">
-                  <a class="bouquet-item__title" href="#">
-                    Букет из пионов, питтоспорума и эвкалипта
-                  </a>
+                  <div class="bouquet-item__top">
+                    <a class="bouquet-item__title" href="#">
+                      Букет из пионов, питтоспорума и эвкалипта
+                    </a>
+                    <div class="bouquet-item__type">
+                      <div class="bouquet-item__type-item">
+                        <input class="bouquet-item__type-input" id="type-small" type="radio" name="type" required>
+                        <label class="bouquet__type-label" for="type-small" data-uk-tooltip="Уменьшенный">
+                          <svg class="bouquet__type-flower bouquet__type-flower_small">
+                            <use xlink:href="/img/sprite.svg#flower"/>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="bouquet-item__type-item">
+                        <input class="bouquet-item__type-input" id="type-medium" type="radio" name="type" required>
+                        <label class="bouquet__type-label" for="type-medium" data-uk-tooltip="Стандартный">
+                          <svg class="bouquet__type-flower bouquet__type-flower_medium">
+                            <use xlink:href="/img/sprite.svg#flower"/>
+                          </svg>
+                        </label>
+                      </div>
+                      <div class="bouquet-item__type-item">
+                        <input class="bouquet-item__type-input" id="type-large" type="radio" name="type" required>
+                        <label class="bouquet__type-label" for="type-large" data-uk-tooltip="ДеЛюкс">
+                          <svg class="bouquet__type-flower bouquet__type-flower_large">
+                            <use xlink:href="/img/sprite.svg#flower"/>
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                   <div class="bouquet-item__bottom">
                     <div class="bouquet-item__price">
                       3800 <span class="rubl bouquet-item__price-rubl">h</span>
@@ -316,15 +344,17 @@
             <div>
               <section class="holiday js-holiday">
                 <div class="holiday__wrapper">
-                  <div class="holiday__date js-holiday-date">
-                    Сегодня 19 октября
-                  </div>
-                  <h2 class="holiday__title js-holiday-title">
-                    День написания письма в будущее
-                  </h2>
-                  <button class="holiday__buy button-action js-holiday-btn" type="button">
+                 
+                    <div class="holiday__date js-holiday-date">
+                      Сегодня 19 октября
+                    </div>
+                    <h2 class="holiday__title js-holiday-title">
+                      День написания письма в будущее
+                    </h2>
+                
+                  <a class="holiday__buy button-action js-holiday-btn" href="#">
                     подарить букет цветов
-                  </button>
+                  </a>
                 </div>
               </section>
             </div>
@@ -549,7 +579,7 @@
                       </li>
                       <li class="add-goods__item">
                         <img class="add-goods__image" data-src="../img/bear.png" data-uk-img data-width="150" data-height="160" alt="">
-                        <input class="button-action" value="добавить к букету" aria-label="добавить к букету">
+                        <input class="button-action" type="button" value="добавить к букету" aria-label="добавить к букету">
                       </li>
                     </ul>
                     <a class="add-goods__slider-left-arrow" href="#" data-uk-slideshow-item="previous" aria-label="предыдущий товар">

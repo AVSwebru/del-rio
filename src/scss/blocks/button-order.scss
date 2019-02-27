@@ -20,6 +20,18 @@
       transition: color 0.25s;
     }
   }
+  &:focus {
+    outline: 1px solid $theme-color-1;
+    color: #fff;
+    .button-order__bg {
+      transform: translateY(0);
+      transition: transform 0.25s;
+    }
+    .button-order__text {
+      color: #fff;
+      transition: color 0.25s;
+    }
+  }
 }
 
 .button-order__text {

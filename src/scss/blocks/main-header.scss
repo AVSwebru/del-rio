@@ -29,6 +29,12 @@
   }
 }
 
+.main-header__logo {
+  &:focus {
+    outline: 1px solid $theme-color-1;
+  }
+}
+
 .main-header__logo-pic {
   width: 130px;
   height: 70px;
@@ -118,6 +124,10 @@ a.main-header__cart {
   line-height: 1;
   &:hover {
     color: #fff;
+  }
+  &:focus {
+    outline: 1px solid $theme-color-1;
+    outline-offset: 5px;
   }
   @media (max-width: $breakpoint-small) {
     margin: 5px 0;

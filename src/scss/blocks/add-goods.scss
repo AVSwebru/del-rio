@@ -2,7 +2,7 @@
   position: relative;
   height: 100%;
   box-sizing: border-box;
-  padding: 32px 50px 17px;
+  padding: 32px 20px 17px;
   overflow: hidden;
   &::before {
     content: '';
@@ -61,12 +61,18 @@
   position: absolute;
   top: 26%;
   left: 13px;
+  &:focus {
+    outline: 1px solid $theme-color-1;
+  }
 }
 
 .add-goods__slider-right-arrow {
   position: absolute;
   top: 26%;
   right: 13px;
+  &:focus {
+    outline: 1px solid $theme-color-1;
+  }
 }
 
 .add-goods__arrow {
@@ -75,15 +81,9 @@
 }
 
 .add-goods__arrow-left {
-  position: absolute;
-  top: 50%;
-  left: -44px;
   transform: rotate(90deg);
 }
 
 .add-goods__arrow-right {
-  position: absolute;
-  top: 50%;
-  right: -44px;
   transform: rotate(-90deg);
 }

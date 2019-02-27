@@ -1,5 +1,6 @@
 .button-action {
   @include reset-btn;
+  @include reset-link;
   min-width: 200px;
   box-sizing: border-box;
   padding: 10px;
@@ -13,6 +14,13 @@
   text-align: center;
   &:hover {
     background-color: darken($theme-color-2, 5%);
+    color: #fff;
+    transition: background-color 0.25s;
+  }
+  &:focus {
+    outline: 2px solid $theme-color-1;
+    background-color: darken($theme-color-2, 5%);
+    color: #fff;
     transition: background-color 0.25s;
   }
 }

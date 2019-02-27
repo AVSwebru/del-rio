@@ -21,6 +21,7 @@
   position: relative;
   z-index: 1;
   height: 100%;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,9 +31,10 @@
 .holiday__date {
   position: relative;
   top: -16px;
-  min-width: 200px;
+  width: 200px;
   box-sizing: border-box;
   padding: 6px;
+  margin: 0 auto;
   color: #343434;
   font-family: $font-decor;
   font-style: italic;
@@ -41,7 +43,7 @@
 }
 
 .holiday__title {
-  margin: 0;
+  margin: 0 10px;
   font-family: $font-decor;
   color: #fff;
   font-size: 24px;

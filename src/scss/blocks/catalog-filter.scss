@@ -51,6 +51,14 @@
   color: #343434;
   font-size: 15px;
   line-height: 1;
+  &:focus {
+    outline: none;
+    color: $theme-color-2;
+    .catalog-filter__flower {
+      display: block;
+      fill: $theme-color-2;
+    }
+  }
 }
 
 .catalog-filter__price {
@@ -76,6 +84,8 @@
 }
 
 .catalog-filter__price-label {
+  display: block;
+  margin-bottom: 5px;
   color: #343434;
   font-size: 14px;
   line-height: 1;

@@ -15,6 +15,14 @@
       transition: transform 0.25s;
     }
   }
+  &:focus {
+    outline: 2px solid $theme-color-1;
+    color: #fff;
+    .button-transparent__bg {
+      transform: translateY(0);
+      transition: transform 0.25s;
+    }
+  }
 }
 
 .button-transparent__bg {

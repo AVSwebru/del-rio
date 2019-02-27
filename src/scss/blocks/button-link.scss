@@ -11,7 +11,15 @@
   text-align: center;
   overflow: hidden;
   cursor: pointer;
-  &:hover, &:focus {
+  &:hover {
+    color: #fff;
+    .button-link__bg {
+      transform: translateY(0);
+      transition: transform 0.25s;
+    }
+  }
+  &:focus {
+    outline: 2px solid $theme-color-2;
     color: #fff;
     .button-link__bg {
       transform: translateY(0);

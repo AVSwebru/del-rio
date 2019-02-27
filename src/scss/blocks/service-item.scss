@@ -18,6 +18,14 @@
       transition: background-color 0.25s;
     }
   }
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 2px 2px $theme-color-2;
+    .service-item__title {
+      background-color: transparentize($theme-color-2, 0.2);
+      transition: background-color 0.25s;
+    }
+  }
 }
 
 .service-item__title {

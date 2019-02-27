@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 -30px;
+  margin: 0 0 0 -30px;
   @media (max-width: $breakpoint-small) {
     flex-direction: column;
     align-items: flex-start;
@@ -36,6 +36,15 @@
     transition: transform 0.25s, opacity 0.25s;
   }
   &:hover {
+    color: #fff;
+    &::before {
+      transform: translateY(0);
+      opacity: 1;
+      transition: transform 0.25s, opacity 0.25s;
+    }
+  }
+  &:focus {
+    outline: none;
     color: #fff;
     &::before {
       transform: translateY(0);

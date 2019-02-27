@@ -19,3 +19,11 @@
     border-bottom: 1px solid #e1e1e1;
   }
 }
+
+.innerpage__breadcrumb a {
+  border-bottom: 2px solid transparent;
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid $theme-color-1;
+  }
+}
