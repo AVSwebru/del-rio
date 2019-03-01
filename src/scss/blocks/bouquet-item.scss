@@ -8,9 +8,6 @@
     box-shadow: 5px 9px 28px rgba(208, 204, 215, 0.86);
     transition: box-shadow 0.25s;
   }
-  &:focus {
-    outline: 1px solid $theme-color-1;
-  }
 }
 
 .bouquet-item__image-wrapper {
@@ -48,10 +45,6 @@
   font-size: 14px;
   line-height: 1.3;
   &:hover {
-    color: $theme-color-1;
-  }
-  &:focus {
-    outline: 1px auto $theme-color-1;
     color: $theme-color-1;
   }
 }

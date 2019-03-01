@@ -145,7 +145,7 @@
           <div class="cart__pool">
             <div class="cart-item">
               <div class="cart-item__leftside">
-                <a class="cart-item__photo-container uk-cover-container" href="#">
+                <a class="cart-item__photo-container uk-cover-container" href="#" tabindex="-1">
                   <img src="../img/cart.jpg" data-uk-cover alt="">
                 </a>
                 <a class="cart-item__title" href="#">
@@ -163,7 +163,10 @@
                 </div>
               </div>
               <div class="cart-item__close-btn-container">
-                <button class="cart-item__close-btn" type="button" data-uk-icon="icon: close"></button>
+                <button class="cart-item__close-btn" type="button" aria-label="Удалить товар из корзины">
+                  <span class="cart-item__close-icon" data-uk-icon="icon: close"></span>
+                  <span class="cart-item__close-text">Удалить</span>
+                </button>
               </div>
             </div>
             <div class="cart-item">
@@ -245,7 +248,7 @@
           <section class="cart__contacts">
             <h2>Контактные данные</h2>
             <div class="cart__recipient">
-              <span class="cart__recipient-text">Кому доставить букет?</span>
+              <div class="cart__recipient-text">Кому доставить букет?</div>
               <div class="cart__recipient-field">
                 <input class="cart__recipient-radio" id="recipient-to-me" type="radio" name="contacts-recipient">
                 <label class="cart__recipient-label" for="recipient-to-me">
@@ -339,9 +342,6 @@
                   </label>
                   <div class="cart__field-rightside uk-position-relative">
                     <input class="cart__input uk-input" id="contacts-date" type="date">
-                    <div class="cart__field-calendar">
-                       <img src="../img/calendar.svg" alt="">
-                    </div>
                   </div>
                 </div>
                 <div class="cart__row">

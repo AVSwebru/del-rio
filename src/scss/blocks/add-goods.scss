@@ -2,7 +2,7 @@
   position: relative;
   height: 100%;
   box-sizing: border-box;
-  padding: 32px 20px 17px;
+  padding: 37px 20px 17px;
   overflow: hidden;
   &::before {
     content: '';
@@ -54,25 +54,20 @@
 }
 
 .add-goods__image {
-  margin-bottom: 15px;
+  max-height: 150px;
+  margin-bottom: 10px;
 }
 
 .add-goods__slider-left-arrow {
   position: absolute;
   top: 26%;
   left: 13px;
-  &:focus {
-    outline: 1px solid $theme-color-1;
-  }
 }
 
 .add-goods__slider-right-arrow {
   position: absolute;
   top: 26%;
   right: 13px;
-  &:focus {
-    outline: 1px solid $theme-color-1;
-  }
 }
 
 .add-goods__arrow {
@@ -86,4 +81,8 @@
 
 .add-goods__arrow-right {
   transform: rotate(-90deg);
+}
+
+.add-goods__buy-btn {
+  margin-bottom: 5px;
 }

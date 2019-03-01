@@ -62,15 +62,6 @@
       color: $theme-color-1;
     }
   }
-  &:focus {
-    outline: 1px solid $theme-color-1;
-    .master-schedule__date {
-      color: $theme-color-1;
-    }
-    .master-schedule__title {
-      color: $theme-color-1;
-    }
-  }
 }
 
 .master-schedule__date {

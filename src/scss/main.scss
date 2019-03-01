@@ -1,7 +1,8 @@
-@import "utilities/_custom";
+@import "utilities/custom";
 @import "utilities/animations";
 @import "utilities/mixins";
 @import "utilities/fonts";
+@import "utilities/presets";
 @import "blocks/main-header";
 @import "blocks/home-intro";
 @import "blocks/main-nav";
@@ -49,3 +50,4 @@
 @import "blocks/flower-list";
 @import "blocks/paginator";
 @import "blocks/show-more";
+@import "blocks/paginator-more";

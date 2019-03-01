@@ -22,8 +22,4 @@
 
 .innerpage__breadcrumb a {
   border-bottom: 2px solid transparent;
-  &:focus {
-    outline: none;
-    border-bottom: 2px solid $theme-color-1;
-  }
 }

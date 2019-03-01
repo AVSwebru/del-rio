@@ -38,15 +38,6 @@
       color: $theme-color-1;
     }
   }
-  &:focus {
-    outline: 1px solid $theme-color-1;
-    .master-albums__date {
-      color: $theme-color-1;
-    }
-    .master-albums__title {
-      color: $theme-color-1;
-    }
-  }
   @media (max-width: $breakpoint-small) {
     flex-direction: column;
   }

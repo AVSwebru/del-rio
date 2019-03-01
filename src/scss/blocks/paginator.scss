@@ -3,6 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0 -6px;
+  & > li {
+    margin-bottom: 10px;
+  }
+  @media (max-width: $breakpoint-medium) {
+    justify-content: flex-start;
+  }
   @media (max-width: $breakpoint-small) {
     display: none;
   }
@@ -31,8 +39,12 @@
   }
 }
 
-.paginator__prev, .paginator__next {
+.paginator__prev, .paginator__next, .paginator__start, .paginator__end {
+  margin: 0 6px;
   color: #343434;
   font-size: 16px;
   font-weight: 400;
+  &:hover {
+    text-decoration: none;
+  }
 }
