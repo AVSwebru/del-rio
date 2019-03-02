@@ -1,0 +1,68 @@
+.page-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #d9bad9 url('../img/bg-page-404.jpg') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.page-404__number {
+  margin-bottom: 75px;
+  text-shadow: 9px 16px 44px rgba(41, 3, 34, 0.67);
+  color: rgba(255, 255, 255, 0.75);
+  font-family: $font-decor;
+  font-size: 25vw;
+  font-weight: 700;
+  line-height: 1;
+  @media (max-width: $breakpoint-small) {
+    font-size: 45vw;
+  }
+}
+
+.page-404__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 786px;
+  box-sizing: border-box;
+  padding: 50px 20px 58px;
+  background: rgba(255,255,255,0.85);
+  @media (max-width: $breakpoint-large) {
+    width: auto;
+    padding: 25px 20px 20px;
+  }
+}
+
+.page-404__title {
+  margin-bottom: 8px;
+  text-align: center;
+  color: #343434;
+  font-family: $font-decor;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  @media (max-width: $breakpoint-large) {
+    font-size: 36px;
+  }
+  @media (max-width: $breakpoint-small) {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+}
+
+.page-404__text {
+  margin-bottom: 35px;
+  text-align: center;
+  color: #343434;
+  font-size: 18px;
+  @media (max-width: $breakpoint-large) {
+    font-size: 16px;
+  }
+  @media (max-width: $breakpoint-small) {
+   display: none;
+  }
+}

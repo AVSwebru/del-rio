@@ -118,5 +118,14 @@ import { Sine } from 'gsap';
         .from('.js-contacts-item-inner', 0.5, { opacity: 0, y: 50, ease: Power3. easeOut });
     }
 
+    //Уведомление
+    if (document.querySelector('.js-advert')) {
+      const advertTween = new TimelineMax();
+      advertTween
+        .from('.js-advert-flower-1', 1, { x: 200, ease: Power3. easeOut })
+        .from('.js-advert-flower-2', 1, { x: -200, ease: Power3. easeOut }, '-=1');
+        
+    }
+
   });
 })();

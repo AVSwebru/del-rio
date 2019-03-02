@@ -57,11 +57,7 @@
 }
 
 .cart__recipient-field {
-  display: inline-block;
   margin-left: 40px;
-  padding: 0 3px;
-  border-bottom: 1px solid #d3d6d5;
-  white-space: nowrap;
   @media (max-width: $breakpoint-small) {
     margin-left: 0;
     margin-right: 20px;
@@ -71,9 +67,11 @@
 .cart__recipient-radio {
   appearance: none;
   position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
   &:focus + .cart__recipient-label {
-    outline: $theme-color-1 auto 5px;
-    outline-offset: 5px;
+    border-color: $theme-color-1;
   }
 }
 
@@ -90,12 +88,17 @@
 }
 
 .cart__recipient-label {
+  display: block;
+  padding: 0 3px;
+  border-bottom: 1px solid #d3d6d5;
+  white-space: nowrap;
   cursor: pointer;
 }
 
 .cart__recipient-label-flower {
   width: 16px;
   height: 16px;
+  margin-right: 5px;
   fill: $theme-color-1;
   transform: scale(0) rotate(-90deg);
   transition: transform 0.25s;
@@ -174,8 +177,11 @@
 .cart__checkbox-input {
   position: absolute;
   appearance: none;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
   &:focus + .cart__checkbox-label::before {
-    outline: $theme-color-1 auto 5px;
+    outline: $theme-color-1 auto 2px;
   } 
 }
 
