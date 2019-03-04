@@ -39,13 +39,16 @@
 
 .bouquet-item__title {
   @include reset-link;
-  margin-right: 15px;
+  margin-bottom: 15px;
   display: inline-block;
   color: #343434;
   font-size: 14px;
   line-height: 1.3;
   &:hover {
     color: $theme-color-1;
+  }
+  @media (max-width: $breakpoint-small) {
+    font-size: 18px;
   }
 }
 

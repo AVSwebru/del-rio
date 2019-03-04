@@ -18,6 +18,9 @@
       transition: transform 0.25s;
     }
   }
+  @media (max-width: $breakpoint-small) {
+    padding: 25px;
+  }
 }
 
 .button-link__bg {

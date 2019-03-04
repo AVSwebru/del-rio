@@ -3,10 +3,8 @@
   &_adapt {
     display: grid;
     grid-template-columns: repeat(auto-fit, 220px);
+    grid-template-columns: 100%;
     grid-gap: 25px;
-    @media (max-width: $breakpoint-small) {
-      display: block;
-    }
   }
 }
 
@@ -63,7 +61,7 @@
 
 .catalog-filter__price {
   width: 220px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .catalog-filter__price-text {

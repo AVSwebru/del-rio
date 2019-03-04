@@ -15,6 +15,10 @@
     color: #fff;
     transition: background-color 0.25s;
   }
+  @media (max-width: $breakpoint-small) {
+    width: 35px;
+    height: 35px;
+  }
 }
 
 .counter__input {
@@ -27,5 +31,8 @@
   font-weight: 400;
   &:focus {
     border-color: $theme-color-1;
+  }
+  @media (max-width: $breakpoint-small) {
+    height: 35px;
   }
 }

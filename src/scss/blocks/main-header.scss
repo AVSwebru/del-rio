@@ -1,16 +1,9 @@
 .main-header {
-  top: 0;
-  left: 0;
   z-index: 5;
   width: 100%;
+  background-color: rgba(13, 18, 22, 0.85);
   &_homepage {
-    position: absolute;
-  }
-  &_innerpage {
-    position: static;
-    background: url('../img/bg-intro.jpg') 50% 50% no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    position: fixed;
   }
 }
 

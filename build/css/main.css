@@ -10003,17 +10003,11 @@ iframe.uk-cover {
   outline-color: #038a62; }
 
 .main-header {
-  top: 0;
-  left: 0;
   z-index: 5;
-  width: 100%; }
+  width: 100%;
+  background-color: rgba(13, 18, 22, 0.85); }
   .main-header_homepage {
-    position: absolute; }
-  .main-header_innerpage {
-    position: static;
-    background: url("../img/bg-intro.jpg") 50% 50% no-repeat;
-    background-size: cover;
-    background-attachment: fixed; }
+    position: fixed; }
 
 .main-header__top-wrapper {
   display: flex;
@@ -10372,6 +10366,9 @@ a.main-header__cart {
       transition: -webkit-transform 0.25s;
       transition: transform 0.25s;
       transition: transform 0.25s, -webkit-transform 0.25s; }
+  @media (max-width: 640px) {
+    .button-link {
+      padding: 25px; } }
 
 .button-link__bg {
   position: absolute;
@@ -10693,10 +10690,8 @@ a.main-header__cart {
   .catalog-filter_adapt {
     display: grid;
     grid-template-columns: repeat(auto-fit, 220px);
+    grid-template-columns: 100%;
     grid-gap: 25px; }
-    @media (max-width: 640px) {
-      .catalog-filter_adapt {
-        display: block; } }
 
 .catalog-filter__list {
   margin: 0;
@@ -10739,7 +10734,7 @@ a.main-header__cart {
 
 .catalog-filter__price {
   width: 220px;
-  margin-bottom: 50px; }
+  margin-bottom: 25px; }
 
 .catalog-filter__price-text {
   margin-bottom: 15px;
@@ -10815,7 +10810,7 @@ a.main-header__cart {
 
 .bouquet-item__title {
   text-decoration: none;
-  margin-right: 15px;
+  margin-bottom: 15px;
   display: inline-block;
   color: #343434;
   font-size: 14px;
@@ -10824,6 +10819,9 @@ a.main-header__cart {
     text-decoration: none; }
   .bouquet-item__title:hover {
     color: #038a62; }
+  @media (max-width: 640px) {
+    .bouquet-item__title {
+      font-size: 18px; } }
 
 .bouquet-item__top {
   display: flex;
@@ -10903,6 +10901,9 @@ a.main-header__cart {
     .button-order:hover .button-order__text {
       color: #fff;
       transition: color 0.25s; }
+  @media (max-width: 640px) {
+    .button-order {
+      padding: 12px; } }
 
 .button-order__text {
   position: relative;
@@ -10912,6 +10913,9 @@ a.main-header__cart {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: color 0.25s; }
+  @media (max-width: 640px) {
+    .button-order__text {
+      font-size: 14px; } }
 
 .button-order__bg {
   position: absolute;
@@ -10997,6 +11001,10 @@ a.main-header__cart {
     background-color: #f03a3a;
     color: #fff;
     transition: background-color 0.25s; }
+  @media (max-width: 640px) {
+    .button-action {
+      font-size: 14px;
+      padding: 14px; } }
 
 .random {
   padding: 46px 0;
@@ -11536,6 +11544,7 @@ a.main-header__cart {
     color: #fff; }
 
 .contacts-block__tel-icon {
+  margin-right: 5px;
   fill: #fff; }
 
 .contacts-block__instagramm {
@@ -11549,6 +11558,7 @@ a.main-header__cart {
     color: #fff; }
 
 .contacts-block__instagramm-icon {
+  margin-right: 5px;
   fill: #fff; }
 
 .contacts-block__address {
@@ -11600,9 +11610,6 @@ a.main-header__cart {
   grid-template-columns: repeat(auto-fit, 273px);
   grid-gap: 15px;
   margin-bottom: 70px; }
-  @media (max-width: 640px) {
-    .catalog__pool {
-      justify-content: center; } }
 
 .catalog__filter-btn {
   display: none;
@@ -11866,6 +11873,9 @@ a.main-header__cart {
   border-bottom: 1px solid #d3d6d5;
   white-space: nowrap;
   cursor: pointer; }
+  @media (max-width: 640px) {
+    .cart__recipient-label {
+      margin-bottom: 10px; } }
 
 .cart__recipient-label-flower {
   width: 16px;
@@ -11911,8 +11921,7 @@ a.main-header__cart {
   margin-bottom: 36px; }
   @media (max-width: 640px) {
     .cart__row {
-      display: block;
-      margin-bottom: 15px; } }
+      display: block; } }
 
 .cart__field-label {
   width: 160px;
@@ -12008,6 +12017,9 @@ a.main-header__cart {
 
 .cart__checkbox-row {
   margin-bottom: 20px; }
+  @media (max-width: 640px) {
+    .cart__checkbox-row {
+      margin-bottom: 25px; } }
 
 .cart__payment {
   margin-bottom: 87px; }
@@ -12172,6 +12184,10 @@ a.main-header__cart {
     background-color: #038a62;
     color: #fff;
     transition: background-color 0.25s; }
+  @media (max-width: 640px) {
+    .counter__btn {
+      width: 35px;
+      height: 35px; } }
 
 .counter__input {
   width: 50px;
@@ -12183,6 +12199,9 @@ a.main-header__cart {
   font-weight: 400; }
   .counter__input:focus {
     border-color: #038a62; }
+  @media (max-width: 640px) {
+    .counter__input {
+      height: 35px; } }
 
 .about__date {
   display: flex;
@@ -12581,7 +12600,7 @@ a.main-header__cart {
   color: #5b5b5b; }
 
 .delivery-item__small-text {
-  color: #2d2d2d;
+  color: #747474;
   font-size: 14px; }
 
 .master-sign {

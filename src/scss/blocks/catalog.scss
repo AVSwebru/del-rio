@@ -15,9 +15,6 @@
   grid-template-columns: repeat(auto-fit, 273px);
   grid-gap: 15px;
   margin-bottom: 70px;
-  @media (max-width: $breakpoint-small) {
-    justify-content: center;
-  }
 }
 
 .catalog__filter-btn {
