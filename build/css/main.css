@@ -10004,10 +10004,19 @@ iframe.uk-cover {
 
 .main-header {
   z-index: 5;
-  width: 100%;
-  background-color: rgba(13, 18, 22, 0.85); }
+  width: 100%; }
   .main-header_homepage {
-    position: fixed; }
+    position: absolute; }
+    @media (max-width: 640px) {
+      .main-header_homepage {
+        position: fixed; } }
+  .main-header_innerpage {
+    background: #060709 url("../img/bg-intro.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    background-attachment: fixed; }
+  @media (max-width: 640px) {
+    .main-header {
+      background: rgba(13, 18, 22, 0.85); } }
 
 .main-header__top-wrapper {
   display: flex;
@@ -12756,14 +12765,14 @@ a.main-header__cart {
   display: flex;
   justify-content: center; }
 
-.advert {
+.announcment {
   position: relative;
   margin: 0 50px 50px; }
   @media (max-width: 640px) {
-    .advert {
+    .announcment {
       margin: 0 10px 50px; } }
 
-.advert__inner {
+.announcment__inner {
   position: relative;
   z-index: 2;
   min-height: 235px;
@@ -12771,35 +12780,35 @@ a.main-header__cart {
   padding: 21px 42px 25px;
   border-left: 3px solid #038a62;
   border-right: 3px solid #038a62;
-  background: url("../img/bg-advert.jpg") 50% 50% no-repeat;
+  background: #eee url("../img/bg-announcment.jpg") 50% 50% no-repeat;
   background-size: cover;
   text-align: center; }
   @media (max-width: 640px) {
-    .advert__inner {
+    .announcment__inner {
       width: auto; } }
 
-.advert__flower-1 {
+.announcment__flower-1 {
   position: absolute;
   top: 22px;
   left: -55px;
   z-index: 1;
   width: 55px;
   height: 200px;
-  background: url("../img/advert-flowers-1.png") 50% 50% no-repeat; }
+  background: url("../img/announcment-flowers-1.png") 50% 50% no-repeat; }
   @media (max-width: 640px) {
-    .advert__flower-1 {
+    .announcment__flower-1 {
       display: none; } }
 
-.advert__flower-2 {
+.announcment__flower-2 {
   position: absolute;
   top: 22px;
   right: -54px;
   z-index: 1;
   width: 55px;
   height: 200px;
-  background: url("../img/advert-flowers-2.png") 50% 50% no-repeat; }
+  background: url("../img/announcment-flowers-2.png") 50% 50% no-repeat; }
   @media (max-width: 640px) {
-    .advert__flower-2 {
+    .announcment__flower-2 {
       display: none; } }
 
 .page-404 {
@@ -12814,7 +12823,7 @@ a.main-header__cart {
   background-size: cover; }
 
 .page-404__number {
-  margin-bottom: 75px;
+  margin-bottom: 2vw;
   text-shadow: 9px 16px 44px rgba(41, 3, 34, 0.67);
   color: rgba(255, 255, 255, 0.75);
   font-family: "Philosopher", serif;
@@ -12829,14 +12838,16 @@ a.main-header__cart {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 786px;
+  width: 65vw;
   box-sizing: border-box;
-  padding: 50px 20px 58px;
+  padding: 3vw 20px;
   background: rgba(255, 255, 255, 0.85); }
   @media (max-width: 1200px) {
     .page-404__block {
-      width: auto;
-      padding: 25px 20px 20px; } }
+      width: auto; } }
+  @media (max-width: 640px) {
+    .page-404__block {
+      padding: 5vw 20px; } }
 
 .page-404__title {
   margin-bottom: 8px;

@@ -1,4 +1,4 @@
-.advert {
+.announcment {
   position: relative;
   margin: 0 50px 50px;
   @media (max-width: $breakpoint-small) {
@@ -6,7 +6,7 @@
   }
 }
 
-.advert__inner {
+.announcment__inner {
   position: relative;
   z-index: 2;
   min-height: 235px;
@@ -14,7 +14,7 @@
   padding: 21px 42px 25px;
   border-left: 3px solid  $theme-color-1;
   border-right: 3px solid $theme-color-1;
-  background: url('../img/bg-advert.jpg') 50% 50% no-repeat;
+  background: #eee url('../img/bg-announcment.jpg') 50% 50% no-repeat;
   background-size: cover;
   text-align: center;
   @media (max-width: $breakpoint-small) {
@@ -22,27 +22,27 @@
   }
 }
 
-.advert__flower-1 {
+.announcment__flower-1 {
   position: absolute;
   top: 22px;
   left: -55px;
   z-index: 1;
   width: 55px;
   height: 200px;
-  background: url('../img/advert-flowers-1.png') 50% 50% no-repeat;
+  background: url('../img/announcment-flowers-1.png') 50% 50% no-repeat;
   @media (max-width: $breakpoint-small) {
     display: none;
   }
 }
 
-.advert__flower-2 {
+.announcment__flower-2 {
   position: absolute;
   top: 22px;
   right: -54px;
   z-index: 1;
   width: 55px;
   height: 200px;
-  background: url('../img/advert-flowers-2.png') 50% 50% no-repeat;
+  background: url('../img/announcment-flowers-2.png') 50% 50% no-repeat;
   @media (max-width: $breakpoint-small) {
     display: none;
   }

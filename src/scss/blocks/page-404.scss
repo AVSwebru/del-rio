@@ -11,7 +11,7 @@
 }
 
 .page-404__number {
-  margin-bottom: 75px;
+  margin-bottom: 2vw;
   text-shadow: 9px 16px 44px rgba(41, 3, 34, 0.67);
   color: rgba(255, 255, 255, 0.75);
   font-family: $font-decor;
@@ -27,13 +27,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 786px;
+  width: 65vw;
   box-sizing: border-box;
-  padding: 50px 20px 58px;
+  padding: 3vw 20px;
   background: rgba(255,255,255,0.85);
   @media (max-width: $breakpoint-large) {
     width: auto;
-    padding: 25px 20px 20px;
+  }
+  @media (max-width: $breakpoint-small) {
+   padding: 5vw 20px;
   }
 }
 

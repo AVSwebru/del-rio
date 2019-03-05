@@ -1,9 +1,19 @@
 .main-header {
   z-index: 5;
   width: 100%;
-  background-color: rgba(13, 18, 22, 0.85);
   &_homepage {
-    position: fixed;
+    position: absolute;
+    @media (max-width: $breakpoint-small) {
+      position: fixed;
+    }
+  }
+  &_innerpage {
+    background: #060709 url('../img/bg-intro.jpg') 50% 50% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  @media (max-width: $breakpoint-small) {
+    background: rgba(13, 18, 22, 0.85);
   }
 }
 
